@@ -9,7 +9,7 @@ The README will serve as a third person POV of my thinking process when developi
 
 The main goal of this project is to learn web development while I create my own personal website. This idea comes from the realization that I lack personal projects (Appart from some smaller or uni related stuff) and that when you learn the most (At least in software development, maybe not in math) is when you develop (How surprising is this? hahaha).
 
-To achieve this and to see a cool evolution as time goes by, I will start developing the page with very simple technologies (I really mean it, the first version is going to be pure html). Every new version of the website will adopt new technologies and in the actual site you will be able to see previous versions (Or at least that's my initial idea, maybe in a few months this becomes a darkweb drug marketplace; Who knows?). 
+To achieve this and to see a cool evolution as time goes by, I will start developing the page with very simple technologies (I really mean it, the first version is going to be pure html). Every new version of the website will adopt new technologies and in the actual site you will be able to see previous versions (Or at least that's my initial idea, maybe in a few months this becomes a criptocasino; Who knows? ). 
 
 I will also try to rely on AI as little as possible to generate code. It is undeniable that AI is a super useful tool, but I think that it should be used with boundaries if our goal is to learn (I swear not a single word on this README has been AI-generated). Of course, I will use it as a tutor to learn, but I think that I will learn much more if every (maybe some, almost-surely is enough for us P(line witten by AI)=0) line of code is written personally by me.
 
@@ -21,5 +21,17 @@ My goal is to learn web development by doing this page.
 I will do it in an iterative way, adopting new technologies on each version.
 I'll try to use AI as little as possible to learn as much as possible.
 
+**Date:** 26/12/2025
+
 ## Version 0:
 
+Merry Xmas! This first version of the web-page is going to be simply html, nothing else. I think this early stage of the development is one of the most difficult parts because you actually have to write text hahaha. The page will be simple: A main page with three sections (Who I am, Projects, Interests) and some other individual pages such as meta-website (Where this will be written) or books. 
+
+I am now thinking about the technologies I will be adopting in each version and now I think I will do the following:
+1. HTML
+2. CSS
+3. Tailwind
+4. JavaScript 
+
+At this point I guess I will start developing some backend, haven't decided yet which framework to use (Probably FastAPI).
+After this I will search which frontend frameworks to use. I don't know, we will see when I reach this point (Hopofully in less than two weeks).
