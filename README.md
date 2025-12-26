@@ -25,13 +25,5 @@ I'll try to use AI as little as possible to learn as much as possible.
 
 ## Version 0:
 
-Merry Xmas! This first version of the web-page is going to be simply html, nothing else. I think this early stage of the development is one of the most difficult parts because you actually have to write text hahaha. The page will be simple: A main page with three sections (Who I am, Projects, Interests) and some other individual pages such as meta-website (Where this will be written) or books. 
+Merry Xmas! This first version of the web-page is going to be html, nothing else. I think this early stage of the development is one of the most difficult parts because you actually have to write text hahaha. The page will be simple: A main page with three sections (Who I am, Projects, Interests) and some other individual pages such as meta-website (Where this will be written) or books. 
 
-I am now thinking about the technologies I will be adopting in each version and now I think I will do the following:
-1. HTML
-2. CSS
-3. Tailwind
-4. JavaScript 
-
-At this point I guess I will start developing some backend, haven't decided yet which framework to use (Probably FastAPI).
-After this I will search which frontend frameworks to use. I don't know, we will see when I reach this point (Hopofully in less than two weeks).
