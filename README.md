@@ -27,3 +27,4 @@ I'll try to use AI as little as possible to learn as much as possible.
 
 Merry Xmas! This first version of the web-page is going to be html, nothing else. I think this early stage of the development is one of the most difficult parts because you actually have to write text hahaha. The page will be simple: A main page with three sections (Who I am, Projects, Interests) and some other individual pages such as meta-website (Where this will be written) or books. The books page will be connected with a database in the future.
 
+I deployed. For this first version I simply used Vercel but this may change in the future. I also had to buy and configure the domain.
