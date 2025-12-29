@@ -30,3 +30,9 @@ Merry Xmas! This first version of the web-page is going to be html, nothing else
 I deployed. For this first version I simply used Vercel but this may change in the future. I also had to buy and configure the domain (Fortunately we learnt how DNS works at Uni hahah). 
 
 Lastly, I reorganized the folder structure of the project.
+
+**Date:** 29/12/2025
+
+## Version 1:
+
+New version, added CSS. I wanted to do the CSS once in my life so that I never use it again (I will eventually use it again).

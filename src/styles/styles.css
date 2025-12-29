@@ -1,0 +1,24 @@
+/* =====================
+   RESET / NORMALIZE
+===================== */
+
+/* I prefer this box-sizing model */
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* Media stop being inline */
+img, video{
+  display: block;
+  max-width: 100%;
+}
+
+/* Apparently form elements don't inherit by default */
+input, button, textarea, select {
+  font: inherit;
+}
