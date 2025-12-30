@@ -31,8 +31,8 @@ I deployed. For this first version I simply used Vercel but this may change in t
 
 Lastly, I reorganized the folder structure of the project.
 
-**Date:** 29/12/2025
+**Date:** 29-30-31/12/2025
 
 ## Version 1:
 
-New version, added CSS. I wanted to do the CSS once in my life so that I never use it again (I will eventually use it again).
+New version, added the whole CSS. I wanted to do CSS once in my life so that I never use it again (I will eventually use it again). I only knew the basics about CSS before. Now, after +500 lines of CSS I can confidently say that I know some CSS (Stay always humble) learning about grid and flexbox was kind of interesting. Now I think that I won't adopt Tailwind after this (There is no point on changing the whole html). 
