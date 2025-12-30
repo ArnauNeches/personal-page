@@ -1,0 +1,437 @@
+/* =====================
+BORDERS (DEBUGGING PURPOSES)
+===================== */
+/*
+header, main, footer {
+    border: 1px solid red;
+}
+
+section {
+  border: 1px solid blue;
+}
+
+form {
+  border: 1px solid green;
+}
+
+ol, ul, article {
+  border: 1px solid purple;
+}
+
+/* =====================
+   RESET / NORMALIZE
+===================== */
+
+/* I prefer this box-sizing model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--ff);
+  font-size: 100%;
+}
+
+/* Media stop being inline */
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Apparently form elements don't inherit by default */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =====================
+       VARIABLES
+===================== */
+
+:root {
+  --bg-color: #000;
+  --bg-hmf-color: #1a1919;
+  --bg-section-color: #222121;
+  --bg-titles-color: #656565;
+  --bg-component-color: #353535;
+
+  --titles-color: #ffffff;
+  --text-color: #dedede;
+  --link-color: #c0e6f8;
+  --link-color-hover: #67cbf9;
+  --link-color-visited: #efbcfa;
+
+  --ff: Helvetica, Arial, sans-serif;
+
+  --space-sm: 1rem;
+  --space-md: 2.5rem;
+  --space-lg: 4rem;
+
+  --radius: 0.5rem;
+
+  --fs-sm: 1rem;
+  --fs-md: 1.2rem;
+  --fs-lg: 1.6rem;
+}
+
+/* =====================
+       TYPOGRAPHY
+===================== */
+
+h1 {
+  color: var(--titles-color);
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+h2 {
+  color: var(--titles-color);
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+h3 {
+  color: var(--titles-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p,
+li {
+  color: var(--text-color);
+  font-size: var(--fs-md);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-color-visited)
+}
+
+/* =====================
+      PAGE FRAME
+===================== */
+
+body {
+  padding: 2rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.site-header,
+main {
+  padding: 1rem 5rem;
+  background-color: var(--bg-hmf-color);
+}
+
+section,
+article {
+  padding-block: var(--space-lg);
+  background-color: var(--bg-section-color);
+
+}
+
+.header-title,
+.section-title{
+  background-color: var(--bg-titles-color);
+  border-radius: var(--radius);
+  position: sticky;
+  top: 0;
+}
+
+h3 {
+  background-color: var(--bg-titles-color);
+  border-radius: var(--radius);
+}
+
+li,
+form {
+  background-color: var(--bg-cards-color);
+}
+
+p {
+  margin: 0.7em;
+}
+
+/* =====================
+   LAYOUT CONTAINER
+===================== */
+
+.container {
+  max-width: 1300px;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+
+/* =====================
+      INDEX HEADER
+===================== */
+
+.index-grid {
+  display: grid;
+  grid-template: 4fr 1fr / 1fr 3fr;
+  gap: 0;
+}
+
+.arnau-image {
+  grid-area: 1 / 1 / span 2 / span 1;
+  border-radius: var(--radius);
+  margin: auto;
+}
+
+.index-text {
+  grid-area: 1 / 2 / span 1 / span 1;
+  font-size: var(--fs-lg);
+  padding: 3rem;
+  margin: auto;
+}
+
+.index-nav {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+/* =====================
+    STANDARD HEADER
+===================== */
+
+.header-title {
+  text-align: center;
+}
+
+.header-text {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: var(--fs-lg);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  font-size: var(--fs-lg);
+  background-color: var(--bg-component-color);
+}
+
+/* =====================
+         FOOTER
+===================== */
+
+.site-footer {
+  margin: var(--space-md);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  font-size: var(--fs-md);
+  background-color: var(--bg-component-color);
+}
+
+/* =====================
+        PROJECTS
+===================== */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.projects {
+  flex: 0 1 30rem;
+  max-width: 500px;
+}
+
+.projects-title {
+  color: var(--titles-color);
+  background-color: var(--bg-titles-color);
+  border-radius: var(--radius);
+}
+
+.project-elements-container {
+  display: grid;
+  grid-template: repeat(5, 1fr) / 1fr;
+  grid-auto-flow: row;
+  gap: 2px;
+}
+
+.project {
+  border-top: 1px solid var(--bg-section-color);
+  width: auto;
+  height: 200px;
+  border-radius: var(--radius);
+  background-color: var(--bg-component-color);
+  text-align: center;
+}
+
+.project-title {
+  color: var(--titles-color);
+  text-align: center;
+  font-size: var(--fs-md);
+}
+
+.project-text {
+  font-size: var(--fs-sm);
+}
+
+/* =====================
+        INTERESTS
+===================== */
+
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: var(--space-md);
+}
+
+.interest {
+  font-size: var(--fs-md);
+  background-color: var(--bg-component-color);
+}
+
+/* =====================
+         BOOKS
+===================== */
+
+.years-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.books-container {
+  padding: var(--space-md);
+  flex: 0 1 30rem;
+  display: grid;
+  grid-template: repeat(5, 1fr) / 1frs;
+  grid-auto-flow: row;
+  gap: 2px;
+}
+
+.year-title {
+  text-align: center;
+  height: 2rem;
+}
+
+.book {
+  background-color: var(--bg-component-color);
+  border-radius: var(--radius);
+  height: 1.7rem;
+}
+
+/* =====================
+        VERSIONS
+===================== */
+
+.version-links {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.version-link {
+  font-size: var(--fs-md);
+  padding: var(--space-sm);
+}
+
+/* =====================
+       BOOK FORM
+===================== */
+
+.books-form {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 3fr 1fr / repeat(2, 1fr);
+  gap: 4px;
+  background-color: var(--bg-component-color);
+  border-radius: var(--radius);
+  margin: var(--space-md);
+  justify-items: center;
+  
+}
+
+.books-form-text {
+  grid-area: 1 / 1 / span 1 / span 2;
+  text-align: center;
+  color: var(--titles-color);
+}
+
+.books-title-label {
+  grid-area: 2 / 1 / span 1 / span 1;
+  text-align: center;
+}
+
+.books-title-input {
+  grid-area: 3 / 1 / span 1 / span 1;
+  text-align: center;
+  max-height: var(--space-md);
+}
+
+.books-author-label {
+  grid-area: 2 / 2 / span 1 / span 1;
+  text-align: center;
+}
+
+.books-author-input {
+  grid-area: 3 / 2 / span 1 / span 1;
+  max-height: var(--space-md);
+}
+
+.books-description-label {
+  grid-area: 4 / 1 / span 1 / span 2;
+  text-align: center;
+}
+
+.books-description-textarea {
+  grid-area: 5 / 1 / span 1 / span 2;
+  text-align: center;
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+  justify-self: stretch;
+}
+
+.books-submit {
+  grid-area: 6 / 1 / span 1 / span 2;
+  margin-top: var(--space-sm);
+  max-height: var(--space-md);
+}
+
+/* =====================
+         VIDEOS
+===================== */
+
+.video-section {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.video {
+  margin: var(--space-sm);
+}

@@ -1,65 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/assets/images/favicon.png">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Arnau's personal website</title>
 </head>
+
 <body>
 
-    <header>
-        <h1>Arnau's personal website</h1>
-        <p> 
-            Hi, I'm Arnau from Seville, Spain. I am a fourth year student of a double bachelor's degree in Pure Mathematics
-            and Computer Science at The University of Seville. I am currently an exchange student at The University of Sydney.
-        </p>
-        <img src="src/assets/images/me.png" alt="Arnau image" style="width: 200px;"> 
-        <nav>
-            <ul>
-                <li><a href="#who-i-am">Who I am</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#interests">Interests</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="header-title">Arnau's personal website</h1>
+
+            <div class="index-grid">
+                <img class="arnau-image" src="src/assets/images/me.png" alt="Arnau image">
+                <div class="index-text">
+                    Hi, I'm Arnau from Seville, Spain. I am a fourth year student of a double bachelor's degree in Pure
+                    Mathematics
+                    and Computer Science at The University of Seville. I am currently an exchange student at The
+                    University
+                    of Sydney.
+                </div>
+                <div class="index-nav">
+                    <nav class="header-nav">
+                        <div class="nav-link"><a href="#who-i-am">Who I am</a></div>
+                        <div class="nav-link"><a href="#projects">Projects</a></div>
+                        <div class="nav-link"><a href="#interests">Interests</a></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
     </header>
 
-    <main>
-        <section id="who-i-am">
-            <h2>Who I am</h2>
-            <p> I like to understand things fundamentally and to solve difficult problems, because of this, I chose to study Math and CS. Math is rigorous, formal and gets to the root of the things which I love, while in CS computers stop being a black box and start becoming something I can understand. </p>
-            <p> In CS my main interest is AI/ML. I am currently a research assistant at my home university at the <a href="https://grupo.us.es/minerva/" target="_blank">Minerva Research Group</a> working on attribute selection.</p>
-            <p> Apart from this, I also enjoy learning about low level stuff like computer architecture, operating systems or networks.</p>
-            <p> On the math's side, I started being an Algebra fan, then switched to Analysis and Topology and then back to Algebra. Now seeing it with perspective, it coincides with the branch I had the best professors each year. Okay, I accept this is very ambiguous, if it was a life or death question I would probably say analysis (Sorry Algebra fans).</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>One of the main reasons I started with this website was because of the lack of real projects I had. Hopefully, the list below will increase over time</p>
-            <ul>
-                <li><a href="https://github.com/ArnauNeches/personal-page">Personal website</a>: This website has as its main goal that I learn web development. Because of this, I develop in parallel this <a href="meta-website.html">meta-website</a> which explains all my thinking process when developing this page, every decision I take and an overview of what I learn within the development.</li>
-                <li><a href="https://github.com/ArnauNeches/COMP3520-OS-Internals">Operating Systems</a>: Some C programs related with multi-threading and kernel scheduling.</li>
-                <li><a href="comp3888.html">Accessible Activity Data Platform</a>: Computer Science Capstone Project at The University of Sydney.</li>
-                <li><a href="https://github.com/ArnauNeches/instagram-unfollowers">Instagram unfollowers</a></li>
-                <li><a href="https://github.com/ArnauNeches/folder-structure">Folder structure</a></li>
-            </ul>
-        </section>
-        <section id="interests">
-            <h2>Interests (Apart from Math and CS)</h2>
-            <ul>
-                <li><a href="books.html">Reading</a></li>
-                <li>Traveling</li>
-                <li>Entrepreneurship</li>
-            </ul>
-        </section>
-    </main>
+    <main class="site-main">
+        <div class="container">
+            <section class="main-section" id="who-i-am">
+                <h2 class="section-title">Who I am</h2>
+                <p> I like to understand things fundamentally and to solve difficult problems, because of this, I chose
+                    to
+                    study Math and CS. Math is rigorous, formal and gets to the root of the things which I love, while
+                    in CS
+                    computers stop being a black box and start becoming something I can understand. </p>
+                <p> In CS my main interest is AI/ML. I am currently a research assistant at my home university at the <a
+                        href="https://grupo.us.es/minerva/" target="_blank">Minerva Research Group</a> working on
+                    attribute
+                    selection.</p>
+                <p> Apart from this, I also enjoy learning about low level stuff like computer architecture, operating
+                    systems or networks.</p>
+                <p> On the math's side, I started being an Algebra fan, then switched to Analysis and Topology and then
+                    back
+                    to Algebra. Now seeing it with perspective, it coincides with the branch I had the best professors
+                    each
+                    year. Okay, I accept this is very ambiguous, if it was a life or death question I would probably say
+                    analysis (Sorry Algebra fans).</p>
+            </section>
+            <section class="main-section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <p>One of the main reasons I started with this website was because of the lack of real projects I had.
+                    Hopefully, the list below will increase over time</p>
+                <div class="projects-container">
+                    <div class="projects bigger">
+                        <h4 class="projects-title bigger">Big projects</h4>
+                        <div class="projects-elements-container">
+                            <div class="project">
+                                <h5 class="project-title">
+                                    <a href="meta-website.html">Personal website:</a>
+                                </h5>
+                                <p class="project-text">
+                                    This website has as its main goal that I learn web development. Because of this, I
+                                    develop in parallel the meta-website which serves as a journal and as a old version time machine.
+                                </p>
+                                <a  href="https://github.com/ArnauNeches/personal-page"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="project">
+                                <h5 class="project-title">
+                                    Operating Systems:
+                                </h5>
+                                <p class="project-text">
+                                    Some C programs related with multi-threading and kernel scheduling.
+                                </p>
+                                <a  href="https://github.com/ArnauNeches/COMP3520-OS-Internals"><i class="fa-brands fa-github"></i></a>
+                                
+                            </div>
+                            <div class="project">
+                                <h5 class="project-title">
+                                    <a href="comp3888.html">Accessible Activity Data Platform:</a>
+                                </h5>
+                                <p class="project-text">
+                                    Computer Science Capstone Project at The University of Sydney. Probably the biggest project I have done so far.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects smaller">
+                        <h4 class="projects-title smaller">Smaller projects</h4>
+                        <div class="projects-elements-container">
+                            <div class="project">
+                                <h5 class="project-title">
+                                    Instagram unfollowers:
+                                </h5>
+                                <p class="project-text">
+                                    I simply wanted to see who didn't follow me and how the instagram session tokens worked.
+                                </p>
+                                <a  href="https://github.com/ArnauNeches/instagram-unfollowers"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="project">
+                                <h5 class="project-title">
+                                    Folder-structure:
+                                </h5>
+                                <p class="project-text">
+                                    I didn't know tree command existed (Rookie mistake).
+                                </p>
+                                <a  href="https://github.com/ArnauNeches/folder-structure"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section" id="interests">
+                <h2 class="section-title">Interests (Apart from Math and CS)</h2>
+                <div class="interests-container">
+                    <div class="interest"><a href="books.html">Reading</a></div>
+                    <div class="interest"><a href="https://www.instagram.com/arnau_nechess" target="_blank">Traveling</a></div>
+                    <div class="interest">Entrepreneurship</div>
+                    <div class="interest">Gym</div>
+                </div>
+            </section>
+        </div>
 
-    <footer>
-        <h4>Contact:</h4>
-        <ul>
-            <li> <a href="mailto:arnichi2103@gmail.com">arnichi2103@gmail.com</a>  </li>
-            <li><a href="https://github.com/ArnauNeches">GitHub</a> </li>
-            <li> <a href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/">Linkedln</a> </li>
-        </ul>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="contact-links">
+                <div class="contact-link"> <a href="mailto:arnichi2103@gmail.com"><i
+                            class="fa-solid fa-envelope"></i>arnichi2103@gmail.com</a> </div>
+                <div class="contact-link"> <a href="https://github.com/ArnauNeches"><i
+                            class="fa-brands fa-github"></i>GitHub</a> </div>
+                <div class="contact-link"> <a href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/"><i
+                            class="fa-brands fa-linkedin"></i>Linkedln</a> </div>
+            </div>
+        </div>
+
     </footer>
 </body>
+
 </html>
