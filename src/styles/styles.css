@@ -148,7 +148,7 @@ article {
 }
 
 .header-title,
-.section-title{
+.section-title {
   background-color: var(--bg-titles-color);
   border-radius: var(--radius);
   position: sticky;
@@ -332,7 +332,7 @@ p {
   padding: var(--space-md);
   flex: 0 1 30rem;
   display: grid;
-  grid-template: repeat(5, 1fr) / 1frs;
+  grid-template: repeat(5, 1fr) / 1fr;
   grid-auto-flow: row;
   gap: 2px;
 }
@@ -374,7 +374,7 @@ p {
   border-radius: var(--radius);
   margin: var(--space-md);
   justify-items: center;
-  
+
 }
 
 .books-form-text {
@@ -434,4 +434,90 @@ p {
 
 .video {
   margin: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0.5rem;
+  }
+
+  .site-header,
+  main {
+    padding: 1rem;
+
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .index-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .arnau-image {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+
+  .index-text {
+    padding: 1rem;
+    text-align: center;
+    font-size: var(--fs-md);
+  }
+
+  .index-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects {
+    width: 100%;
+  }
+
+  .project {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .book {
+    height: auto;
+  }
+
+  .books-form {
+    grid-template-columns: 1fr;
+  }
+
+  .books-form * {
+    grid-area: auto;
+    width: 100%;
+  }
+
+  .books-description-textarea {
+    margin-inline: 0;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
