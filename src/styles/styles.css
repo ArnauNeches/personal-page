@@ -1,4 +1,24 @@
 /* =====================
+BORDERS (DEBUGGING PURPOSES)
+===================== */
+/*
+header, main, footer {
+    border: 1px solid red;
+}
+
+section {
+  border: 1px solid blue;
+}
+
+form {
+  border: 1px solid green;
+}
+
+ol, ul, article {
+  border: 1px solid purple;
+}
+
+/* =====================
    RESET / NORMALIZE
 ===================== */
 
@@ -31,10 +51,16 @@ input, button, textarea, select {
 
 :root {
   --bg-color: #000;
-  --titles-bg-color: #3B3434;
-  --secondary-bg-color: #6B5D5D;
+  --bg-hmf-color: #1a1919;
+  --bg-section-color: #222121;
+  --bg-titles-color: #656565;
+  --bg-component-color: #353535;
 
-  --text-color: #fff;
+  --titles-color: #ffffff;
+  --text-color: #dedede;
+  --link-color: #c0e6f8;
+  --link-color-hover: #67cbf9;
+  --link-color-visited: #efbcfa;
 
   --ff: Helvetica, Arial, sans-serif;
 }
@@ -44,22 +70,127 @@ input, button, textarea, select {
 ===================== */
 
 h1 {
+  color: var(--titles-color);
   font-size: 3.2rem;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 h2 {
+  color: var(--titles-color);
   font-size: 2.2rem;
   font-weight: bold;
   line-height: 1.7;
 }
 
 h3 {
+  color: var(--titles-color);
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 p, li {
+  color: var(--text-color);
   font-size: 1.2rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-color-visited)
+}
+
+/* =====================
+      PAGE FRAME
+===================== */
+
+body {
+  padding: 2rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.site-header, main, footer {
+  padding: 1rem 5rem;
+  background-color: var(--bg-hmf-color);
+}
+
+section, article {
+  padding: 1rem 1rem;
+  background-color: var(--bg-section-color);
+  position: sticky;
+  top: 0;
+}
+
+h1, h2, h3 {
+  background-color: var(--bg-titles-color);
+  border-radius: 0.5rem;
+
+}
+
+li, form {
+  background-color: var(--bg-cards-color);
+}
+
+p {
+  margin: 0.7em;
+}
+
+/* =====================
+      INDEX HEADER
+===================== */
+
+.index-grid {
+  display: grid;
+  grid-template: 4fr 1fr / 1fr 3fr;
+  gap: 0;
+}
+
+.arnau-image {
+  grid-area: 1 / 1 / span 2 / span 1;
+  border-radius: 4%;
+  margin: auto;
+}
+
+.index-text {
+  grid-area: 1 / 2 / span 1 / span 1;
+  font-size: 1.6rem;
+  padding: 3rem;
+  margin: auto;
+}
+
+.index-nav {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+/* =====================
+    STANDARD HEADER
+===================== */
+
+.header-title {
+  text-align: center;
+}
+
+.header-text {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  background-color: var(--bg-component-color);
 }

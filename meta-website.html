@@ -10,26 +10,28 @@
 </head>
 
 <body>
-    <header>
-        <h1> The meta-website of Arnau's personal site </h1>
+    <header class="site-header">
+        <h1 class="header-title"> The meta-website of Arnau's personal site </h1>
+        <p class="header-text"> This will serve as a development journal of my personal website. There will be new entries for
+                each version of the website (Or whenever I fell like writing something). It will also serve as a time machine to view static previous versions. </p>
+        <nav class="header-nav">
+            <div class="nav-link"><a href="#versions">Versions</a></div>
+            <div class="nav-link"><a href="#journal">Journal</a></div>
+            <div class="nav-link"><a href="index.html">Main page</a></div>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>What is this?</h2>
-            <p> This will serve as a journal of the development of my personal website. There will be new entries for
-                each version of the website.</p>
-        </section>
-        <section>
+    <main class="site-main">
+        <section class="main-section" id="versions">
             <h2>Version list</h2>
-            <ol>
-                <li>Version 0: <a href="/versions/v0/index.html">Pure HTML</a></li>
-                <li>Version 1: HTML+CSS</li>
-                <li>TBD ... </li>
-            </ol>
+            <div class="version-links">
+                <div class="version-link">Version 0: <a href="/versions/v0/index.html">Pure HTML</a></div>
+                <div class="version-link">Version 1: HTML+CSS</div>
+                <div class="version-link">TBD ... </div>
+            </div>
         </section>
-        <section>
+        <section class="main-section" id="journal">
             <h2>Journal</h2>
-            <article>
+            <article class="journal-article">
                 <time datetime="2025-12-18">18/12/2025</time>
                 <h3> Initial goal and methodology:</h3>
                 <p>
@@ -58,7 +60,7 @@
                     I'll try to use AI as little as possible to learn as much as possible.
                 </p>
             </article>
-            <article>
+            <article class="journal-article">
                 <time datetime="2025-12-26">26/12/2025</time>
                 <h3> Version 0: </h3>
                 <p>
@@ -75,9 +77,14 @@
             </article>
         </section>
     </main>
-    <footer>
-        <p>Last updated: <time datetime="2025-12-27">27/12/2025</time></p>
-        <p>Back to main page: <a href="index.html">Main page</a></p>
+    <footer class="site-footer">
+        <p>Last updated: <time datetime="2025-12-30">30/12/2025</time></p>
+        <h3>Contact:</h3>
+        <div class="contact-links">
+            <div class="contact-link"> <a href="mailto:arnichi2103@gmail.com">arnichi2103@gmail.com</a>  </div>
+            <div class="contact-link"> <a href="https://github.com/ArnauNeches">GitHub</a> </div>
+            <div class="contact-link"> <a href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/">Linkedln</a> </div>
+        </div>
     </footer>
 </body>
 
