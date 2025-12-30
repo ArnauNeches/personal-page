@@ -23,7 +23,7 @@ ol, ul, article {
 ===================== */
 
 /* I prefer this box-sizing model */
-*{
+* {
   box-sizing: border-box;
   margin: 0;
 }
@@ -35,13 +35,17 @@ body {
 }
 
 /* Media stop being inline */
-img, video{
+img,
+video {
   display: block;
   max-width: 100%;
 }
 
 /* Apparently form elements don't inherit by default */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -63,6 +67,16 @@ input, button, textarea, select {
   --link-color-visited: #efbcfa;
 
   --ff: Helvetica, Arial, sans-serif;
+
+  --space-sm: 1rem;
+  --space-md: 2.5rem;
+  --space-lg: 4rem;
+
+  --radius: 0.5rem;
+
+  --fs-sm: 1rem;
+  --fs-md: 1.2rem;
+  --fs-lg: 1.6rem;
 }
 
 /* =====================
@@ -89,9 +103,10 @@ h3 {
   font-weight: bold;
 }
 
-p, li {
+p,
+li {
   color: var(--text-color);
-  font-size: 1.2rem;
+  font-size: var(--fs-md);
 }
 
 a {
@@ -119,30 +134,49 @@ body {
   color: var(--text-color);
 }
 
-.site-header, main{
+.site-header,
+main {
   padding: 1rem 5rem;
   background-color: var(--bg-hmf-color);
 }
 
-section, article {
-  padding: 1rem 1rem;
+section,
+article {
+  padding-block: var(--space-lg);
   background-color: var(--bg-section-color);
+
+}
+
+.header-title,
+.section-title{
+  background-color: var(--bg-titles-color);
+  border-radius: var(--radius);
   position: sticky;
   top: 0;
 }
 
-h1, h2, h3 {
+h3 {
   background-color: var(--bg-titles-color);
-  border-radius: 0.5rem;
-
+  border-radius: var(--radius);
 }
 
-li, form {
+li,
+form {
   background-color: var(--bg-cards-color);
 }
 
 p {
   margin: 0.7em;
+}
+
+/* =====================
+   LAYOUT CONTAINER
+===================== */
+
+.container {
+  max-width: 1300px;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
 }
 
 /* =====================
@@ -157,13 +191,13 @@ p {
 
 .arnau-image {
   grid-area: 1 / 1 / span 2 / span 1;
-  border-radius: 4%;
+  border-radius: var(--radius);
   margin: auto;
 }
 
 .index-text {
   grid-area: 1 / 2 / span 1 / span 1;
-  font-size: 1.6rem;
+  font-size: var(--fs-lg);
   padding: 3rem;
   margin: auto;
 }
@@ -183,6 +217,7 @@ p {
 .header-text {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-size: var(--fs-lg);
 }
 
 .header-nav {
@@ -193,7 +228,7 @@ p {
 }
 
 .nav-link {
-  font-size: 1.6rem;
+  font-size: var(--fs-lg);
   background-color: var(--bg-component-color);
 }
 
@@ -202,7 +237,7 @@ p {
 ===================== */
 
 .site-footer {
-  margin: 3rem;
+  margin: var(--space-md);
 }
 
 .contact-links {
@@ -213,6 +248,71 @@ p {
 }
 
 .contact-link {
-  font-size: 1.4rem;
+  font-size: var(--fs-md);
+  background-color: var(--bg-component-color);
+}
+
+/* =====================
+        PROJECTS
+===================== */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.projects {
+  flex: 0 1 30rem;
+  max-width: 500px;
+}
+
+.projects-title {
+  color: var(--titles-color);
+  background-color: var(--bg-titles-color);
+  border-radius: var(--radius);
+}
+
+.project-elements-container {
+  display: grid;
+  grid-template: repeat(5, 1fr) / 1fr;
+  grid-auto-flow: row;
+  gap: 2px;
+}
+
+.project {
+  border-top: 1px solid var(--bg-section-color);
+  width: auto;
+  height: 200px;
+  border-radius: var(--radius);
+  background-color: var(--bg-component-color);
+  text-align: center;
+}
+
+.project-title {
+  color: var(--titles-color);
+  text-align: center;
+  font-size: var(--fs-md);
+}
+
+.project-text {
+  font-size: var(--fs-sm);
+}
+
+/* =====================
+        INTERESTS
+===================== */
+
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: var(--space-md);
+}
+
+.interest {
+  font-size: var(--fs-md);
   background-color: var(--bg-component-color);
 }

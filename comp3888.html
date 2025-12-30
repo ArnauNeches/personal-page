@@ -14,72 +14,83 @@
 
 <body>
     <header class="site-header">
-        <h1 class="header-title">Accessible Activity Data Platform</h1>
-        <p class="header-text"> This project was the <a href="https://www.sydney.edu.au/units/COMP3888">Computer Science
-                Capstone
-                Project</a> at The University of Sydney which I did during my exchange year.
-            It was supposed to be done in a 7 people group project but as it always happens with these projects, it was
-            just 2 of us did the whole job (It was a bit stressful, however, I learnt a lot).
-        </p>
-        <nav class="header-nav">
-            <div class="nav-link"><a href="#about">About</a></div>
-            <div class="nav-link"><a href="#project">The project</a></div>
-            <div class="nav-link"><a href="index.html">Main page</a></div>
-        </nav>
+        <div class="container">
+            <h1 class="header-title">Accessible Activity Data Platform</h1>
+            <p class="header-text"> This project was the <a href="https://www.sydney.edu.au/units/COMP3888">Computer
+                    Science
+                    Capstone
+                    Project</a> at The University of Sydney which I did during my exchange year.
+                It was supposed to be done in a 7 people group project but as it always happens with these projects, it
+                was
+                just 2 of us did the whole job (It was a bit stressful, however, I learnt a lot).
+            </p>
+            <nav class="header-nav">
+                <div class="nav-link"><a href="#about">About</a></div>
+                <div class="nav-link"><a href="#project">The project</a></div>
+                <div class="nav-link"><a href="index.html">Main page</a></div>
+            </nav>
+        </div>
+
     </header>
     <main class="site-main">
-        <section class="main-section" id="about">
-            <h2>About the project: </h2>
-            <p>
-                I designed and built a microservice-based web app that automates the discovery and management of
-                accessible physical activity data for a real client. I led the project end-to-end, acting as project
-                manager, main developer and customer liaison (I had to organize meetings every week).
-            </p>
-            <p>
-                This replaces an excel spreadsheet process used previously by the client with a scalable backend, a
-                clean web
-                interface, and an AI-powered scraping pipeline. This pipeline automatically finds relevant activity
-                providers online and turns unstructured web content into structured data using independent service
-                modules built with Python, Flask, and SQLAlchemy.
-            </p>
-            <p>
-                The system integrates PostgreSQL for persistent storage, Pandas for data exploration and cleaning,
-                and
-                multiple external APIs including Google Maps API, Google Geocoding, and Google Custom Search.
-                Dynamic
-                content scraping is handled with Playwright and BeautifulSoup, while Gemini API is used to convert
-                raw text into structured, schema-compliant candidate records.
-            </p>
-            <p>
-                A candidate workflow ensures data quality before new entries are added to the main
-                dataset. The frontend is built with HTML, Jinja templates, JavaScript, and TailwindCSS.
-            </p>
-            <p>
-                This project demonstrates my ability to lead technical projects, design production-ready systems,
-                and deliver AI-driven automation across the full stack.
-            </p>
-        </section>
-        <section class="main-section" id="project">
-            <h2>The project: </h2>
-            <p> Unfortunately since this project was done for a University course and had real clients involved, it
-                cannot
-                be shared freely. However I can show some video demonstrations of how it worked:
-            </p>
-            <iframe src="https://www.youtube.com/embed/_3_FneizlLo" width="512" height="384"></iframe>
-            <iframe src="https://www.youtube.com/embed/kdBYIEdz2IQ" width="512" height="384"></iframe>
-            <iframe src="https://www.youtube.com/embed/2YMEGG86wtg" width="512" height="384"></iframe>
-            <iframe src="https://www.youtube.com/embed/4ATJDIDczD4" width="512" height="384"></iframe>
-        </section>
+        <div class="container">
+            <section class="main-section" id="about">
+                <h2 class="section-title">About the project: </h2>
+                <p>
+                    I designed and built a microservice-based web app that automates the discovery and management of
+                    accessible physical activity data for a real client. I led the project end-to-end, acting as project
+                    manager, main developer and customer liaison (I had to organize meetings every week).
+                </p>
+                <p>
+                    This replaces an excel spreadsheet process used previously by the client with a scalable backend, a
+                    clean web
+                    interface, and an AI-powered scraping pipeline. This pipeline automatically finds relevant activity
+                    providers online and turns unstructured web content into structured data using independent service
+                    modules built with Python, Flask, and SQLAlchemy.
+                </p>
+                <p>
+                    The system integrates PostgreSQL for persistent storage, Pandas for data exploration and cleaning,
+                    and
+                    multiple external APIs including Google Maps API, Google Geocoding, and Google Custom Search.
+                    Dynamic
+                    content scraping is handled with Playwright and BeautifulSoup, while Gemini API is used to convert
+                    raw text into structured, schema-compliant candidate records.
+                </p>
+                <p>
+                    A candidate workflow ensures data quality before new entries are added to the main
+                    dataset. The frontend is built with HTML, Jinja templates, JavaScript, and TailwindCSS.
+                </p>
+                <p>
+                    This project demonstrates my ability to lead technical projects, design production-ready systems,
+                    and deliver AI-driven automation across the full stack.
+                </p>
+            </section>
+            <section class="main-section" id="project">
+                <h2 class="section-title">The project: </h2>
+                <p> Unfortunately since this project was done for a University course and had real clients involved, it
+                    cannot
+                    be shared freely. However I can show some video demonstrations of how it worked:
+                </p>
+                <iframe src="https://www.youtube.com/embed/_3_FneizlLo" width="512" height="384"></iframe>
+                <iframe src="https://www.youtube.com/embed/kdBYIEdz2IQ" width="512" height="384"></iframe>
+                <iframe src="https://www.youtube.com/embed/2YMEGG86wtg" width="512" height="384"></iframe>
+                <iframe src="https://www.youtube.com/embed/4ATJDIDczD4" width="512" height="384"></iframe>
+            </section>
+        </div>
+
     </main>
     <footer class="site-footer">
-        <div class="contact-links">
-            <div class="contact-link"> <a href="mailto:arnichi2103@gmail.com"><i
-                        class="fa-solid fa-envelope"></i>arnichi2103@gmail.com</a> </div>
-            <div class="contact-link"> <a href="https://github.com/ArnauNeches"><i
-                        class="fa-brands fa-github"></i>GitHub</a> </div>
-            <div class="contact-link"> <a href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/"><i
-                        class="fa-brands fa-linkedin"></i>Linkedln</a> </div>
+        <div class="container">
+            <div class="contact-links">
+                <div class="contact-link"> <a href="mailto:arnichi2103@gmail.com"><i
+                            class="fa-solid fa-envelope"></i>arnichi2103@gmail.com</a> </div>
+                <div class="contact-link"> <a href="https://github.com/ArnauNeches"><i
+                            class="fa-brands fa-github"></i>GitHub</a> </div>
+                <div class="contact-link"> <a href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/"><i
+                            class="fa-brands fa-linkedin"></i>Linkedln</a> </div>
+            </div>
         </div>
+
     </footer>
 
 </body>
