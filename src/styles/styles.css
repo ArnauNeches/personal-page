@@ -316,3 +316,122 @@ p {
   font-size: var(--fs-md);
   background-color: var(--bg-component-color);
 }
+
+/* =====================
+         BOOKS
+===================== */
+
+.years-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.books-container {
+  padding: var(--space-md);
+  flex: 0 1 30rem;
+  display: grid;
+  grid-template: repeat(5, 1fr) / 1frs;
+  grid-auto-flow: row;
+  gap: 2px;
+}
+
+.year-title {
+  text-align: center;
+  height: 2rem;
+}
+
+.book {
+  background-color: var(--bg-component-color);
+  border-radius: var(--radius);
+  height: 1.7rem;
+}
+
+/* =====================
+        VERSIONS
+===================== */
+
+.version-links {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.version-link {
+  font-size: var(--fs-md);
+  padding: var(--space-sm);
+}
+
+/* =====================
+       BOOK FORM
+===================== */
+
+.books-form {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 3fr 1fr / repeat(2, 1fr);
+  gap: 4px;
+  background-color: var(--bg-component-color);
+  border-radius: var(--radius);
+  margin: var(--space-md);
+  justify-items: center;
+  
+}
+
+.books-form-text {
+  grid-area: 1 / 1 / span 1 / span 2;
+  text-align: center;
+  color: var(--titles-color);
+}
+
+.books-title-label {
+  grid-area: 2 / 1 / span 1 / span 1;
+  text-align: center;
+}
+
+.books-title-input {
+  grid-area: 3 / 1 / span 1 / span 1;
+  text-align: center;
+  max-height: var(--space-md);
+}
+
+.books-author-label {
+  grid-area: 2 / 2 / span 1 / span 1;
+  text-align: center;
+}
+
+.books-author-input {
+  grid-area: 3 / 2 / span 1 / span 1;
+  max-height: var(--space-md);
+}
+
+.books-description-label {
+  grid-area: 4 / 1 / span 1 / span 2;
+  text-align: center;
+}
+
+.books-description-textarea {
+  grid-area: 5 / 1 / span 1 / span 2;
+  text-align: center;
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+  justify-self: stretch;
+}
+
+.books-submit {
+  grid-area: 6 / 1 / span 1 / span 2;
+  margin-top: var(--space-sm);
+  max-height: var(--space-md);
+}
+
+/* =====================
+         VIDEOS
+===================== */
+
+.video-section {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.video {
+  margin: var(--space-sm);
+}
