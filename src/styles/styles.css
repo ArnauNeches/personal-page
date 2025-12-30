@@ -119,7 +119,7 @@ body {
   color: var(--text-color);
 }
 
-.site-header, main, footer {
+.site-header, main{
   padding: 1rem 5rem;
   background-color: var(--bg-hmf-color);
 }
@@ -188,9 +188,31 @@ p {
 .header-nav {
   display: flex;
   justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-link {
   font-size: 1.6rem;
+  background-color: var(--bg-component-color);
+}
+
+/* =====================
+         FOOTER
+===================== */
+
+.site-footer {
+  margin: 3rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  font-size: 1.4rem;
   background-color: var(--bg-component-color);
 }
