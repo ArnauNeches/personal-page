@@ -10,6 +10,8 @@
 
 body {
   line-height: 1.5;
+  font-family: var(--ff);
+  font-size: 100%;
 }
 
 /* Media stop being inline */
@@ -21,4 +23,43 @@ img, video{
 /* Apparently form elements don't inherit by default */
 input, button, textarea, select {
   font: inherit;
+}
+
+/* =====================
+       VARIABLES
+===================== */
+
+:root {
+  --bg-color: #000;
+  --titles-bg-color: #3B3434;
+  --secondary-bg-color: #6B5D5D;
+
+  --text-color: #fff;
+
+  --ff: Helvetica, Arial, sans-serif;
+}
+
+/* =====================
+       TYPOGRAPHY
+===================== */
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p, li {
+  font-size: 1.2rem;
 }
