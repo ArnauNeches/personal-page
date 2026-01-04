@@ -262,6 +262,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
+  margin-top: 1rem;
 }
 
 .projects {
