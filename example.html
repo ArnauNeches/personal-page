@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/images/favicon.png">
+    <link rel="stylesheet" href="src/styles/output.css">
+    <title>Example</title>
+</head>
+<body class="bg-bgmain text-main font-custom p-1 lg:p-8">
+
+    <header class="bg-hm p-2 lg:p-4 box-border">
+        <div class="max-w-7xl mx-auto px-6 box-border">
+            <h1 class="bg-bgtitles text-titles font-bold text-lg lg:text-dktitle text-center rounded-xl sticky top-0 z-5">Page title</h1>
+            <p class="text-md text-center lg:text-left lg:text-lg py-1 lg:py-4">
+                Header text, whatsoeveeeerrrrr
+            </p>
+            <nav class="flex justify-around content-center flex-col flex-wrap lg:flex-row gap-2">
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#section1">Section 1</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#section2">Section 2</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="index.html">Main page</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bg-hm p-2 lg:p-4 box-border">
+        <div class="max-w-7xl mx-auto px-6 box-border">
+            <section class="bg-section py-14" id="section1">
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Section 1</h2>
+                <p class="text-sm lg:text-md m-3">
+                    Paragraph 1 content.
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    Paragraph 2 content.
+                </p>
+            </section>
+            <section class="bg-section py-14" id="section2">
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Section 2</h2>
+                <p class="text-sm lg:text-md m-3">
+                    Paragraph 1 content.
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    Paragraph 2 content.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="max-w-7xl mx-auto px-6 py-14 box-border">
+            <div class="flex flex-wrap flex-col lg:flex-row justify-around content-center gap-2">
+                <div class="bg-components text-md">
+                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="mailto:arnichi2103@gmail.com">
+                        <svg class="w-5 h-5 fill-current">
+                            <use href="src/assets/svg/sprites.svg#email"></use>
+                        </svg>
+                        <span>arnichi2103@gmail.com</span>
+                    </a>
+                </div>
+                <div class="bg-components text-md">
+                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches">
+                        <svg class="w-5 h-5 fill-current">
+                            <use href="src/assets/svg/sprites.svg#github"></use>
+                        </svg>
+                        <span>Github</span>
+                    </a>
+                </div>
+                <div class="bg-components text-md">
+                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/">
+                        <svg class="w-5 h-5 fill-current">
+                            <use href="src/assets/svg/sprites.svg#linkedin"></use>
+                        </svg>
+                        <span>Linkedln</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
