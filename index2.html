@@ -9,36 +9,164 @@
     <title>Arnau Neches Vilà</title>
 </head>
 
-<body class="bg-black text-white">
-    <header></header>
-    <main></main>
-    <footer class="m-10">
-        <div class="flex flex-wrap justify-around">
-            <a href="https://github.com/ArnauNeches"
-                class="bg-gray-400 flex items-center gap-2 text-white hover:text-gray-300">
-                <svg class="w-5 h-5 fill-current">
-                    <use href="src/assets/svg/sprites.svg#email"></use>
-                </svg>
-                <span class="hidden sm:inline text-xl">arnichi2103@gmail.com</span>
-            </a>
-            <a href="https://github.com/ArnauNeches"
-                class="bg-gray-400 flex items-center gap-2 text-white hover:text-gray-300">
-                <svg class="w-5 h-5 fill-current">
-                    <use href="src/assets/svg/sprites.svg#github"></use>
-                </svg>
-                <span class="hidden sm:inline text-xl">GitHub</span>
-            </a>
-            <a href="https://github.com/ArnauNeches"
-                class="bg-gray-400 flex items-center gap-2 text-white hover:text-gray-300">
-                <svg class="w-5 h-5 fill-current">
-                    <use href="src/assets/svg/sprites.svg#linkedin"></use>
-                </svg>
-                <span class="hidden sm:inline text-xl">Linkedln</span>
-            </a>
+<body class="bg-bgmain text-main font-custom">
+
+    <header class="bg-hm">
+        <div class="max-w-7xl mx-auto px-6">
+            <h1 class="bg-bgtitles text-titles font-bold text-lg lg:text-dktitle">Arnau's personal website</h1>
+            <div>
+                <img class="h-40 w-auto" src="src/assets/images/me.png" alt="Arnau Neches Vilà image">
+                <div class="text-md lg:text-lg">
+                        Hi, I'm Arnau Neches Vilà from Seville, Spain. I am a fourth year student pursuing a double
+                        bachelor's degree in Pure Mathematics and Computer Science at <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.us.es">The University of Seville</a>. I am currently
+                        an exchange student at <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.sydney.edu.au/">The University of Sydney</a>.
+                </div>
+                <nav>
+                    <div class="bg-components text-md lg:text-lg"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#who-i-am">Who I am</a></div>
+                    <div class="bg-components text-md lg:text-lg"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#projects">Projects</a></div>
+                    <div class="bg-components text-md lg:text-lg"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#interests">Interests</a></div>
+                </nav>
+            </div>
         </div>
 
+    </header>
 
+    <main class="bg-hm">
+
+        <section class="bg-section" id="who-i-am">
+            <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle">Who I am</h2>
+                <p class="text-sm lg:text-md"> 
+                    I like understanding things at a fundamental level and to solve difficult problems. For this reason, I chose
+                    to study Mathemathics and Computer Science. Mathemathics is rigorous, formal and gets to the root of the things
+                    which I love. While in CS computers stop being a black box and start becoming something I can understand. 
+                </p>
+                <p class="text-sm lg:text-md">
+                    In CS my main interest is AI/ML. I am currently a research assistant at my home university at the 
+                    <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://grupo.us.es/minerva/" target="_blank">Minerva Research Group</a> working on
+                    attribute selection and genetic algorithms.
+                </p>
+                <p class="text-sm lg:text-md">
+                    Apart from this, I also enjoy learning about low level topics like computer architecture, operating
+                    systems or networks.
+                </p>
+                <p class="text-sm lg:text-md"> 
+                    On the math's side, I started being an Algebra fan, then switched to Analysis and Topology and then
+                    back to Algebra. Now seeing it with perspective, it coincides with the branch I had the best
+                    professors each year. Ok, I accept this is very ambiguous, if it was a life-or-death question I would
+                    probably say Analysis (Sorry Algebra fans).
+                </p>
+                <p class="text-sm lg:text-md"> 
+                    I have also participated on several Competitive Programming competitions (Both regional and national).
+                </p>
+        </section>
+
+        <section class="bg-section" id="projects">
+            <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle">Projects</h2>
+            <div>
+                <div>
+                    <h4 class="bg-bgtitles text-titles font-bold text-lg">Big projects</h4>
+                    <div class="bg-components">
+                        <h5 class="text-titles font-bold text-md"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="comp3888.html">Accessible Activity Data Platform</a></h5>
+                        <p class="text-sm">
+                            Computer Science Capstone Project at The University of Sydney. Microservice-based
+                            web app that automates the discovery and management of accessible physical activity
+                            data for a real client.
+                        </p>
+                    </div>
+                    <div class="bg-components">
+                        <h5 class="text-titles font-bold text-md"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="meta-website.html">Personal Website</a></h5>
+                        <p class="text-sm">
+                            This website has as its main goal for me to learn web development. Therefore, I
+                            develop in parallel the meta-website, which serves as a journal and as an old version
+                            time machine.
+                        </p>
+                        <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches/personal-page">
+                            <svg class="w-7 h-7 fill-current">
+                                <use href="src/assets/svg/sprites.svg#github"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="bg-components">
+                        <h5 class="text-titles font-bold text-md">Operating Systems</h5>
+                        <p class="text-sm">
+                            Some C programs related with multi-threading and kernel scheduling.
+                        </p>
+                        <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches/COMP3520-OS-Internals">
+                            <svg class="w-7 h-7 fill-current">
+                                <use href="src/assets/svg/sprites.svg#github"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="bg-bgtitles text-titles font-bold text-lg">Smaller projects</h4>
+                    <div class="bg-components">
+                        <h5 class="text-titles font-bold text-md">Instagram Unfollowers</h5>
+                        <p class="text-sm">
+                            I wanted to see who didn't follow me.
+                        </p>
+                        <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches/instagram-unfollowers">
+                            <svg class="w-7 h-7 fill-current">
+                                <use href="src/assets/svg/sprites.svg#github"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="bg-components">
+                        <h5 class="text-titles font-bold text-md">Folder Structure</h5>
+                        <p class="text-sm">
+                            I didn't know tree command existed (rookie mistake).
+                        </p>
+                        <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches/folder-structure">
+                            <svg class="w-7 h-7 fill-current">
+                                <use href="src/assets/svg/sprites.svg#github"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-section" id="interests">
+            <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle">Interests (Apart from Math and CS)</h2>
+            <div>
+                <div class="bg-components text-md"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="books.html">Reading</a></div>
+                <div class="bg-components text-md"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.instagram.com/arnau_nechess">Traveling</a></div>
+                <div class="bg-components text-md">Enterpreneurship</div>
+                <div class="bg-components text-md">Gym</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <div class="bg-components text-md">
+                <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="mailto:arnichi2103@gmail.com">
+                    <svg class="w-5 h-5 fill-current">
+                        <use href="src/assets/svg/sprites.svg#email"></use>
+                    </svg>
+                    <span>arnichi2103@gmail.com</span>
+                </a>
+            </div>
+            <div class="bg-components text-md">
+                <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches">
+                    <svg class="w-5 h-5 fill-current">
+                        <use href="src/assets/svg/sprites.svg#github"></use>
+                    </svg>
+                    <span>Github</span>
+                </a>
+            </div>
+            <div class="bg-components text-md">
+                <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/">
+                    <svg class="w-5 h-5 fill-current">
+                        <use href="src/assets/svg/sprites.svg#linkedin"></use>
+                    </svg>
+                    <span>Linkedln</span>
+                </a>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
