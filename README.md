@@ -36,3 +36,16 @@ Lastly, I reorganized the folder structure of the project.
 ## Version 1:
 
 New version, added the whole CSS. I wanted to do CSS once in my life so that I never use it again (I will eventually use it again). I only knew the basics about CSS before. Now, after +500 lines of CSS I can confidently say that I know some CSS (Stay always humble) learning about grid and flexbox was kind of interesting. Now I think that I won't adopt Tailwind after this (There is no point on changing the whole html). 
+
+**Date:** 13/1/2026
+
+## Version 2:
+Didn't I say that I wasn't gonna do any Tailwind? Well, here we are, webpage completely migrated into TailwindCSS. At first, I thought it was gonna be tricky, but to be fair it just took me a day to learn and to change everything. I watched a youtube tutorial and after that jumped into changing everything (Again using AI as little as possible). I also had to learn how to properly install Tailwind and what package.json is.
+
+Soooo, you may be now wondering, what is my opinion about TailwindCSS? And my answer: I prefer it over css. 
+However, I dislike the way html becomes noisy (Too verbose). I can also understand why llms use it so much and the benefits of this.
+
+Finally, what will next version be you may be wondering. Well, of course it is gonna be: Vanilla JS. No framework until I understand most of it. You are now getting what all of this is about. I am going to start rendering cards without having a database, from plain json files (Reinventing the wheel ts). This brings us to: mini-db project.
+
+See you on the next entry!!
+
