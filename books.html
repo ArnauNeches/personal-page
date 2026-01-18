@@ -10,6 +10,7 @@
 <body class="bg-bgmain text-main font-custom p-1 lg:p-8">
 
     <header class="bg-hm p-2 lg:p-4 box-border">
+
         <div class="max-w-7xl mx-auto px-6 box-border">
             <h1 class="bg-bgtitles text-titles font-bold text-lg lg:text-dktitle text-center rounded-xl sticky top-0 z-5">Reading list</h1>
             <p class="text-md text-center lg:text-left lg:text-lg py-4 lg:py-6">
@@ -22,93 +23,41 @@
                 <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="index.html">Main page</a></div>
             </nav>
         </div>
+
     </header>
 
     <main class="bg-hm p-2 lg:p-4 box-border">
         <div class="max-w-7xl mx-auto px-6 box-border">
             <section class="bg-section py-14" id="read">
+
                 <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Read books</h2>
+
+                <div class="flex flex-wrap justify-center gap-7 flex-col lg:flex-row items-center m-5" id="searchForm">
+                    <label for="search" class="text-md font-medium text-titles">Search by title: </label>
+                    <input type="text" name="title" id="search" class="text-bgmain w-sm rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                </div>
+
+                <div id="searchSuggestions" class="flex justify-around content-center flex-col flex-wrap lg:flex-row gap-2"></div>
                 <div class="flex flex-wrap justify-around content-center">
-                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min">
-                        <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold h-8 text-center">2022-2023</h3>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Way of Kings, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Words of Radiance, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Oathbringer, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Rhythm of War, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Dawnshard, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Elantris, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Warbreaker, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Arcanum Unbounded, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Final Empire, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Well of Ascension, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Hero of Ages, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Alloy of Law, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Shadows of Self, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Bands of Mourning, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Lost Metal, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Lean Startup, Eric Ries</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Atomic Habits, James Clear</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Meditations, Marcus Aurelius</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Thus Spoke Zarathustra, Friedrich Nietzsche</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Brave New World, Aldous Huxley</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">1984, George Orwell</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Animal Farm, George Orwell</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Hitchhiker's Guide To The Galaxy, Douglas Adams</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Sophie's World, Jostein Gaarder</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Sorrows of Young Werther, Goethe</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Sapiens, Yuval Noha Harari</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">21 Lessons for the 21st Century, Yuval Noha Harari</div>
+                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min" id="2023">
+                        <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold h-8 text-center">Late 2022-2023</h3>
                     </div>
-                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min">
+                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min" id="2024">
                         <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold h-8 text-center">2024</h3>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Trafalgar, Benito Pérez Galdós</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Sunlit Man, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Morning and Evening, Jon Fosse</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Da Vinci Code, Dan Brown</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Dune, Frank Herbert</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Le Petit Prince, Antonie de Saint-Exupery</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The New York Trilogy, Paul Auster</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Tress of the Emerald Sea, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Yumi and the Nightmare Painter, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Fahrenheit 451, Ray Bradbury</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Trilogy, Jon Fosse</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">I, Robot, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The City and Its Uncertain Walls, Haruki Murakami</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Los renglones torcidos de Dios, Torcuato Luca de Tena</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Metamorphosis, Franz Kafka</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Solaris, Stanislaw Lem</div>
                     </div>
-                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min">
+                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min" id="2025">
                         <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold h-8 text-center">2025</h3>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Three-Body Problem, Cixin Liu</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Dark Forest, Cixin Liu</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Blood Meridian, Cormac McCarthy</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Death's End, Cixin Liu</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Crónica de una muerte anunciada, Gabriel García Márquez</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Foundation, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Foundation and Empire, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Second Foundation, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Caves of Steel, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Naked Sun, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Robots of Dawn, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Isles of the Emberdark, Brandon Sanderson</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Robots and Empire, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Stars, Like Dust, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Currents of Space, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Pebble in the Sky, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Trial, Franz Kafka</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">The Stranger, Albert Camus</div>
                     </div>
-                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min">
+                    <div class="p-10 grow-0 shrink basis-xl grid gap-2 auto-rows-min" id="2026">
                         <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold h-8 text-center">2026</h3>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Prelude to Foundation, Isaac Asimov</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">La Gitanilla, Miguel de Cervantes</div>
-                        <div class="bg-components rounded-xl min-h-7 leading-5 px-1 py-2 ">Rinconete y Cortadillo, Miguel de Cervantes</div>
                     </div>
                 </div>
+
             </section>
             <section class="bg-section py-14" id="suggestions">
+
                 <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Suggestions!</h2>
+
                 <form action="#" method="post" class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-components rounded-xl p-4 max-w-xl mx-auto my-10 shadow-xl">
                     <p class="lg:col-span-2 text-center text-md font-medium text-titles mb-2">
                         Feel free to suggest books I should read
@@ -116,17 +65,17 @@
                     <label for="title" class="text-sm font-medium text-titles">
                         Title:
                     </label>
-                    <input id="title" name="title" type="text" class="w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                    <input id="title" name="title" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
 
                     <label for="author" class="text-sm font-medium text-titles">
                         Author:
                     </label>
-                    <input id="author" name="author" type="text" class="w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                    <input id="author" name="author" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
                     <label for="description" class="lg:col-span-2 text-sm font-medium text-titles text-center">
                         Brief description on why you think I would like it
                     </label>
                     <textarea id="description" name="description" rows="4"
-                        class="lg:col-span-2 w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles resize-y min-h-30">
+                        class="text-bgmain lg:col-span-2 w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles resize-y min-h-30">
                     </textarea>
                     <input type="submit" value="Submit" class="bg-titles text-bgmain lg:col-span-2 mt-4 py-3 rounded-full font-bold cursor-pointer transition hover:-translate-y-0.5 hover:shadow-lg hover:opacity-90"/>
                 </form>
@@ -135,35 +84,9 @@
         </div>
     </main>
 
-    <footer>
-        <div class="max-w-7xl mx-auto px-6 py-14 box-border">
-            <div class="flex flex-wrap flex-col lg:flex-row justify-around content-center gap-2">
-                <div class="bg-components text-md">
-                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="mailto:arnichi2103@gmail.com">
-                        <svg class="w-5 h-5 fill-current">
-                            <use href="src/assets/svg/sprites.svg#email"></use>
-                        </svg>
-                        <span>arnichi2103@gmail.com</span>
-                    </a>
-                </div>
-                <div class="bg-components text-md">
-                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches">
-                        <svg class="w-5 h-5 fill-current">
-                            <use href="src/assets/svg/sprites.svg#github"></use>
-                        </svg>
-                        <span>Github</span>
-                    </a>
-                </div>
-                <div class="bg-components text-md">
-                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/">
-                        <svg class="w-5 h-5 fill-current">
-                            <use href="src/assets/svg/sprites.svg#linkedin"></use>
-                        </svg>
-                        <span>Linkedln</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <footer id="footer">
     </footer>
+    
+    <script type="module" src="src/js/main.js"></script>
 </body>
 </html>

@@ -32,8 +32,7 @@
                 <div class="text-center p-10">
                     <div class="text-md p-4">V0: <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="/versions/v0/index.html">Pure HTML</a></div>
                     <div class="text-md p-4">V1: <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="/versions/v1/index.html">Custom CSS</a></div>
-                    <div class="text-md p-4">V2: <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="/versions/v2/index.html">TailwindCSS</a></div>
-                    <div class="text-md p-4">V3: JS (Current version)</div>
+                    <div class="text-md p-4">V2: Tailwind (Current version)</div>
                     <div class="text-md p-4">TBD ...</div>
                 </div>
             </section>
@@ -118,9 +117,35 @@
         </div>
     </main>
 
-    <footer id="footer">
+    <footer>
+        <div class="max-w-7xl mx-auto px-6 py-14 box-border">
+            <div class="flex flex-wrap flex-col lg:flex-row justify-around content-center gap-2">
+                <div class="bg-components text-md">
+                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="mailto:arnichi2103@gmail.com">
+                        <svg class="w-5 h-5 fill-current">
+                            <use href="src/assets/svg/sprites.svg#email"></use>
+                        </svg>
+                        <span>arnichi2103@gmail.com</span>
+                    </a>
+                </div>
+                <div class="bg-components text-md">
+                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches">
+                        <svg class="w-5 h-5 fill-current">
+                            <use href="src/assets/svg/sprites.svg#github"></use>
+                        </svg>
+                        <span>Github</span>
+                    </a>
+                </div>
+                <div class="bg-components text-md">
+                    <a class="flex items-center gap-2 text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.linkedin.com/in/arnau-neches-vil%C3%A0-096627255/">
+                        <svg class="w-5 h-5 fill-current">
+                            <use href="src/assets/svg/sprites.svg#linkedin"></use>
+                        </svg>
+                        <span>Linkedln</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
-    
-    <script type="module" src="src/js/main.js"></script>
 </body>
 </html>
