@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,15 @@
     <title>Arnau Neches Vilà | Meta-website</title>
 </head>
 <body class="bg-bgmain text-main font-custom p-1 lg:p-8">
+
+    <div class="flex items-center gap-x-3">
+        <label for="dark-mode-toggle" class="relative inline-block w-11 h-6 cursor-pointer">
+            <input type="checkbox" id="dark-mode-toggle" class="peer sr-only">
+            <span class="absolute inset-0 bg-components rounded-full transition-colors duration-200 ease-in-out"></span>
+            <span class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-titles rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full"></span>
+        </label>
+        <label for="dark-mode-toggle" class="text-sm text-titles" id="dark-mode-text">Dark mode: Off</label>
+    </div>
 
     <header class="bg-hm p-2 lg:p-4 box-border">
         <div class="max-w-7xl mx-auto px-6 box-border">

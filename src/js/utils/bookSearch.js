@@ -35,4 +35,5 @@ function matchingBooks(searchTerm, books) {
 
     return results.map(book => (
         {title: book.title, author: book.author}
-    ))};
+    ));
+};
