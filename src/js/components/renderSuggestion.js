@@ -7,14 +7,14 @@ export function renderSuggestion(suggestion){
     container.dataset.id = suggestion.id;
 
     const button = document.createElement("button");
-    button.className = "absolute bg-red-500 rounded-2xl w-20 text-white top-4 right-10 cursor-pointer transition hover:scale-115 hover:opacity-90";
+    button.className = "absolute bg-red-500 rounded-2xl w-20 text-white top-4 right-4 cursor-pointer transition hover:scale-110 hover:opacity-90";
     button.innerText = "Delete";
     button.addEventListener("click", () => {
         deleteSuggestion(container);
     });
 
     const titleAuthor = document.createElement("div");
-    titleAuthor.className = "text-titles pr-28";
+    titleAuthor.className = "text-titles w-full pr-28";
     titleAuthor.innerText = `${suggestion.title} | ${suggestion.author}`;
 
     const description = document.createElement("div");
