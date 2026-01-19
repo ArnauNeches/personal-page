@@ -1,3 +1,5 @@
+import { renderSuggestion } from "../components/renderSuggestion.js";
+
 export function validateForm() {
     const description = document.getElementById("description");
     const textError = document.getElementById("error-message");
@@ -26,21 +28,23 @@ export function handleFormSubmit() {
             textError.innerText = "Error: Fields can't be empty and description needs to have 10 characters.";
         } else {
             textError.innerText = "";
-            let arraySuggestions;
 
             const suggestion = {
                 title: title.value, 
                 author: author.value, 
-                description: description.value
+                description: description.value,
+                id: Date.now()
             };
 
-            let storage = localStorage.getItem("suggestions");
-            if (!storage) {
-                arraySuggestions = [];
-            } else {
-                arraySuggestions = JSON.parse(storage);
-                
-            }
+            title.value = "";
+            author.value = "";
+            description.value = "";
+            const container = document.getElementById("recent-suggestions");
+            const node = renderSuggestion(suggestion);
+            container.appendChild(node);
+
+            let arraySuggestions = JSON.parse(localStorage.getItem("suggestions")) || [];
+
             arraySuggestions.push(suggestion);
 
             let stringSuggestions = JSON.stringify(arraySuggestions);
