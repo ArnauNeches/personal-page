@@ -49,3 +49,13 @@ Finally, what will next version be you may be wondering. Well, of course it is g
 
 See you on the next entry!!
 
+**Date:** 19/1/2026
+
+## Version 3:
+Okey after two days of work, JS is done! My plan was to transition to React after this. However, I think this website
+is too static to use React (Will this be as the time I said no Tailwind migration?).
+
+A brief summary of the main features I added with JavaScript: Books list and projects list are now rendered instead of hardcoded into the HTML (However, they are rendered from jsons and not from a proper DB. For that I first need to learn backend). The footer is also rendered as it was the same in all pages.
+I added a very cool book search feature! Also dark and light mode which took me a while because most information was for Tailwind V3 not V4 and I didn't want to add dark: class all the time. The suggestions book form now works! (In localStorage, again I still haven't learnt backend). Finally, the videos aren't loaded immediately but only when clicked.
+
+What will next version be? I don't know yet. As I wrote before, my initial plan was React but maybe I directly create a small backend for the page. Stay tuned and you will know!
