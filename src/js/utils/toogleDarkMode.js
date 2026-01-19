@@ -8,21 +8,21 @@ export function handleDarkMode() {
 
     if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)){
         html.classList.add("dark");
-        darkText.innerText = "Dark mode: On";
+        darkText.innerText = "Dark mode";
     } else {
         html.classList.remove("dark");
-        darkText.innerText = "Dark mode: Off";
+        darkText.innerText = "Light mode";
     }
 
     toggle.addEventListener("click", () => {
         if (html.classList.contains("dark")) {
             html.classList.remove("dark");
             localStorage.setItem("theme", "light");
-            darkText.innerText = "Dark mode: Off";
+            darkText.innerText = "Light mode";
         } else {
             html.classList.add("dark");
             localStorage.setItem("theme", "dark");
-            darkText.innerText = "Dark mode: On";
+            darkText.innerText = "Dark mode";
         }
     });
 }

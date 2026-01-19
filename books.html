@@ -15,7 +15,7 @@
             <span class="absolute inset-0 bg-components rounded-full transition-colors duration-200 ease-in-out"></span>
             <span class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-titles rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full"></span>
         </label>
-        <label for="dark-mode-toggle" class="text-sm text-titles" id="dark-mode-text">Dark mode: Off</label>
+        <label for="dark-mode-toggle" class="text-sm text-titles" id="dark-mode-text">Dark mode</label>
     </div>
 
     <header class="bg-hm p-2 lg:p-4 box-border">
@@ -42,8 +42,8 @@
                 <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Read books</h2>
 
                 <div class="flex flex-wrap justify-center gap-7 flex-col lg:flex-row items-center m-5" id="searchForm">
-                    <label for="search" class="text-md font-medium text-titles">Search by title: </label>
-                    <input type="text" name="title" id="search" class="text-bgmain w-sm rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                    <label for="search" class="text-sm lg:text-md font-medium text-titles">Search by title: </label>
+                    <input type="text" name="title" id="search" class="text-bgmain w-auto lg:w-sm rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
                 </div>
 
                 <div id="searchSuggestions" class="flex justify-around content-center flex-col flex-wrap lg:flex-row gap-2"></div>
@@ -67,28 +67,33 @@
 
                 <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Suggestions!</h2>
 
-                <form action="#" method="post" class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-components rounded-xl p-4 max-w-xl mx-auto my-10 shadow-xl">
-                    <p class="lg:col-span-2 text-center text-md font-medium text-titles mb-2">
-                        Feel free to suggest books I should read
-                    </p>
-                    <label for="title" class="text-sm font-medium text-titles">
-                        Title:
-                    </label>
-                    <input id="title" name="title" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-6 px-4">
+                    <form novalidate id="submit-books" class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-components rounded-xl p-4 w-full max-w-lg my-6 shadow-xl">
+                        <p class="lg:col-span-2 text-center text-md font-medium text-titles mb-2">
+                            Feel free to suggest books I should read
+                        </p>
+                        <label for="title" class="text-sm font-medium text-titles">
+                            Title:
+                        </label>
+                        <input required id="title" name="title" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
 
-                    <label for="author" class="text-sm font-medium text-titles">
-                        Author:
-                    </label>
-                    <input id="author" name="author" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
-                    <label for="description" class="lg:col-span-2 text-sm font-medium text-titles text-center">
-                        Brief description on why you think I would like it
-                    </label>
-                    <textarea id="description" name="description" rows="4"
-                        class="text-bgmain lg:col-span-2 w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles resize-y min-h-30">
-                    </textarea>
-                    <input type="submit" value="Submit" class="bg-titles text-bgmain lg:col-span-2 mt-4 py-3 rounded-full font-bold cursor-pointer transition hover:-translate-y-0.5 hover:shadow-lg hover:opacity-90"/>
-                </form>
-
+                        <label for="author" class="text-sm font-medium text-titles">
+                            Author:
+                        </label>
+                        <input required id="author" name="author" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                        <label for="description" class="lg:col-span-2 text-sm font-medium text-titles text-center">
+                            Brief description on why you think I would like it
+                        </label>
+                        <textarea required minlength="10" id="description" name="description" rows="4"
+                            class="text-bgmain lg:col-span-2 w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles resize-y min-h-30">
+                        </textarea>
+                        <input type="submit" value="Submit" class="bg-titles text-bgmain lg:col-span-2 mt-4 py-3 rounded-full font-bold cursor-pointer transition hover:-translate-y-0.5 hover:shadow-lg hover:opacity-90"/>
+                        <div id="error-message" class="lg:col-span-2 text-md text-black bg-red-400 font-bold text-center w-full"></div>
+                    </form>
+                    <div id="recent-suggestions" class="p-4 my-6 w-full lg:max-w-lg grid gap-2 auto-rows-min lg:max-h-[500px] lg:overflow-y-auto">
+                        <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold text-center">Your recent suggestions</h3>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
