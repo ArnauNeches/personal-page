@@ -7,6 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --spacing: 0.25rem;
     --container-xs: 20rem;
@@ -478,6 +481,12 @@
   .bg-hm {
     background-color: var(--color-hm);
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
+  }
   .bg-section {
     background-color: var(--color-section);
   }
@@ -567,6 +576,9 @@
   .text-main {
     color: var(--color-main);
   }
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
   .text-titles {
     color: var(--color-titles);
   }
@@ -610,21 +622,6 @@
     &:is(:where(.peer):checked ~ *) {
       --tw-translate-x: 100%;
       translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  .peer-checked\:bg-green-600 {
-    &:is(:where(.peer):checked ~ *) {
-      background-color: var(--color-green-600);
-    }
-  }
-  .peer-disabled\:pointer-events-none {
-    &:is(:where(.peer):disabled ~ *) {
-      pointer-events: none;
-    }
-  }
-  .peer-disabled\:opacity-50 {
-    &:is(:where(.peer):disabled ~ *) {
-      opacity: 50%;
     }
   }
   .visited\:text-linkvisited {

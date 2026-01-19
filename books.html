@@ -67,26 +67,27 @@
 
                 <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Suggestions!</h2>
 
-                <form action="#" method="post" class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-components rounded-xl p-4 max-w-xl mx-auto my-10 shadow-xl">
+                <form novalidate id="submit-books" class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-components rounded-xl p-4 max-w-xl mx-auto my-10 shadow-xl">
                     <p class="lg:col-span-2 text-center text-md font-medium text-titles mb-2">
                         Feel free to suggest books I should read
                     </p>
                     <label for="title" class="text-sm font-medium text-titles">
                         Title:
                     </label>
-                    <input id="title" name="title" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                    <input required id="title" name="title" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
 
                     <label for="author" class="text-sm font-medium text-titles">
                         Author:
                     </label>
-                    <input id="author" name="author" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
+                    <input required id="author" name="author" type="text" class="text-bgmain w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles"/>
                     <label for="description" class="lg:col-span-2 text-sm font-medium text-titles text-center">
                         Brief description on why you think I would like it
                     </label>
-                    <textarea id="description" name="description" rows="4"
+                    <textarea required minlength="10" id="description" name="description" rows="4"
                         class="text-bgmain lg:col-span-2 w-full rounded-md border border-bg px-3 py-2 text-sm bg-titles resize-y min-h-30">
                     </textarea>
                     <input type="submit" value="Submit" class="bg-titles text-bgmain lg:col-span-2 mt-4 py-3 rounded-full font-bold cursor-pointer transition hover:-translate-y-0.5 hover:shadow-lg hover:opacity-90"/>
+                    <div id="error-message" class="text-md text-black bg-red-400 font-bold text-center"></div>
                 </form>
 
             </section>

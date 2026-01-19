@@ -3,6 +3,7 @@ import { renderProjects } from "./projects.js";
 import { renderFooter } from "./components/renderFooter.js";
 import { initBookSearch } from "./utils/bookSearch.js";
 import { handleDarkMode } from "./utils/toogleDarkMode.js";
+import { validateForm, handleFormSubmit } from "./utils/form.js";
 
 handleDarkMode();
 
@@ -16,4 +17,6 @@ if (document.getElementById("projects")) {
 } else if (document.getElementById("read")) {
     const books = await renderBooks();
     initBookSearch(books);
+    validateForm();
+    handleFormSubmit();
 }
