@@ -38,12 +38,16 @@
         <div class="max-w-7xl mx-auto px-6 box-border">
             <section class="bg-section py-14" id="versions">
                 <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Version list</h2>
-                <div class="text-center p-10">
-                    <div class="text-md p-4">V0: <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="/versions/v0/index.html">Pure HTML</a></div>
-                    <div class="text-md p-4">V1: <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="/versions/v1/index.html">Custom CSS</a></div>
-                    <div class="text-md p-4">V2: <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="/versions/v2/index.html">TailwindCSS</a></div>
-                    <div class="text-md p-4">V3: JS (Current version)</div>
-                    <div class="text-md p-4">TBD ...</div>
+                
+                <div class="text-center pt-8 pb-4">
+                    <label for="version-select" class="text-titles text-md font-bold mr-2">Time Machine:</label>
+                    <select id="version-select" class="bg-components text-main border border-bgmain rounded-md p-2 cursor-pointer">
+                        <option value="">Select a version...</option>
+                        <option value="/versions/v0/index.html">Version 0: Pure HTML</option>
+                        <option value="/versions/v1/index.html">Version 1: Custom CSS</option>
+                        <option value="/versions/v2/index.html">Version 2: Tailwind</option>
+                        <option value="current" selected>Version 3: JavaScript (Current)</option>
+                    </select>
                 </div>
             </section>
             <section class="bg-section py-14" id="journal">

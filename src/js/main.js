@@ -3,6 +3,7 @@ import { renderProjects } from "./projects.js";
 import { renderFooter } from "./components/renderFooter.js";
 import { handleDarkMode } from "./utils/toogleDarkMode.js";
 import { lazyVideos } from "./utils/lazyVideos.js";
+import { initVersionSelector } from "./utils/versionSelector.js";
 
 handleDarkMode();
 
@@ -15,4 +16,6 @@ if (document.getElementById("projects")) {
     await initBooksPage();
 } else if (document.getElementById("demo")) {
     lazyVideos();
+} else if (document.getElementById("versions")) {
+    initVersionSelector();
 }
