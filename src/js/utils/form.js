@@ -26,9 +26,25 @@ export function handleFormSubmit() {
             textError.innerText = "Error: Fields can't be empty and description needs to have 10 characters.";
         } else {
             textError.innerText = "";
-            console.log(title.value);
-            console.log(author.value);
-            console.log(description.value);
+            let arraySuggestions;
+
+            const suggestion = {
+                title: title.value, 
+                author: author.value, 
+                description: description.value
+            };
+
+            let storage = localStorage.getItem("suggestions");
+            if (!storage) {
+                arraySuggestions = [];
+            } else {
+                arraySuggestions = JSON.parse(storage);
+                
+            }
+            arraySuggestions.push(suggestion);
+
+            let stringSuggestions = JSON.stringify(arraySuggestions);
+            localStorage.setItem("suggestions", stringSuggestions);
         }
     });
 }
