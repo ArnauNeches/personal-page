@@ -17,28 +17,27 @@ export function validateForm() {
 
 export function handleFormSubmit() {
     const submit = document.getElementById("submit-books");
-    const title = document.getElementById("title");
-    const author = document.getElementById("author");
-    const description = document.getElementById("description");
     const textError = document.getElementById("error-message");
 
     submit.addEventListener("submit", (event) => {
         event.preventDefault();
-        if (!title.value || !author.value || description.value.length <= 10){
+        const form = new FormData(submit);
+        if (!form.get("title") || !form.get("author") || form.get("description").length <= 10){
             textError.innerText = "Error: Fields can't be empty and description needs to have 10 characters.";
         } else {
             textError.innerText = "";
 
             const suggestion = {
-                title: title.value, 
-                author: author.value, 
-                description: description.value,
+                title: form.get("title"), 
+                author: form.get("author"), 
+                description: form.get("description"),
                 id: Date.now()
             };
 
-            title.value = "";
-            author.value = "";
-            description.value = "";
+            form.set("title", "");
+            form.set("author", "");
+            form.set("description", "");
+            
             const container = document.getElementById("recent-suggestions");
             const node = renderSuggestion(suggestion);
             container.appendChild(node);
