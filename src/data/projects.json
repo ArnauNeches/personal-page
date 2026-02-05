@@ -34,6 +34,13 @@
             "github": "https://github.com/ArnauNeches/mini-db",
             "link": "",
             "type": "small"
+        },
+        "5": {
+            "Title": "Weekly Planner",
+            "description": "Interactive weekly planner made with React",
+            "github": "https://github.com/ArnauNeches/weekly-planner",
+            "link": "",
+            "type": "small"
         }
     },
     "meta": {
