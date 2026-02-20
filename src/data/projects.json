@@ -37,10 +37,10 @@
         },
         "5": {
             "Title": "Weekly Planner",
-            "description": "Interactive weekly planner made with React",
+            "description": "Interactive weekly planner made with React and FastAPI",
             "github": "https://github.com/ArnauNeches/weekly-planner",
             "link": "",
-            "type": "small"
+            "type": "big"
         }
     },
     "meta": {
