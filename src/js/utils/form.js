@@ -1,4 +1,5 @@
 import { renderSuggestion } from "../components/renderSuggestion.js";
+import { supabase } from "./supabaseClient.js";
 
 export function validateForm() {
     const description = document.getElementById("description");
@@ -19,18 +20,28 @@ export function handleFormSubmit() {
     const submit = document.getElementById("submit-books");
     const textError = document.getElementById("error-message");
 
-    submit.addEventListener("submit", (event) => {
+    submit.addEventListener("submit", async (event) => {
         event.preventDefault();
+
         const form = new FormData(submit);
-        if (!form.get("title") || !form.get("author") || form.get("description").length <= 10){
+        const title = form.get("title");
+        const author = form.get("author");
+        const description = form.get("description");
+
+        if (!title || !author || description.length <= 10){
             textError.innerText = "Error: Fields can't be empty and description needs to have 10 characters.";
         } else {
             textError.innerText = "";
 
+            const { error } = await supabase.from('book_suggestions').insert([{ title, author, description }]);
+            if (error){
+                console.error("Error sending to Supabase: ", error);
+            }
+
             const suggestion = {
-                title: form.get("title"), 
-                author: form.get("author"), 
-                description: form.get("description"),
+                title: title, 
+                author: author, 
+                description: description,
                 id: Date.now()
             };
 
@@ -43,11 +54,8 @@ export function handleFormSubmit() {
             container.appendChild(node);
 
             let arraySuggestions = JSON.parse(localStorage.getItem("suggestions")) || [];
-
             arraySuggestions.push(suggestion);
-
-            let stringSuggestions = JSON.stringify(arraySuggestions);
-            localStorage.setItem("suggestions", stringSuggestions);
+            localStorage.setItem("suggestions", JSON.stringify(arraySuggestions));
         }
     });
 }

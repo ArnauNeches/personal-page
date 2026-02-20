@@ -20,7 +20,7 @@ async function renderBooks(){
         const node = renderBook(book);
         container.appendChild(node);
     }
-    return Object.values(books.data);
+    return books;
 }
 
 function renderSuggestions() {
