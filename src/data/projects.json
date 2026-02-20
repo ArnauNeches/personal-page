@@ -26,16 +26,9 @@
             "description": "I wanted to see who didn't follow me. Ended up doing a chrome extension.",
             "github": "https://github.com/ArnauNeches/instagram-unfollowers",
             "link": "",
-            "type": "small"
+            "type": "big"
         },
         "4": {
-            "Title": "Mini Database",
-            "description": "CLI program to generate useful json files. We'll see how it ends up...",
-            "github": "https://github.com/ArnauNeches/mini-db",
-            "link": "",
-            "type": "small"
-        },
-        "5": {
             "Title": "Weekly Planner",
             "description": "Interactive weekly planner made with React and FastAPI",
             "github": "https://github.com/ArnauNeches/weekly-planner",
