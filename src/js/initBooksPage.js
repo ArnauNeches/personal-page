@@ -2,13 +2,18 @@ import { renderBook } from "./components/renderBook.js";
 import { renderSuggestion } from "./components/renderSuggestion.js";
 import { initBookSearch } from "./utils/bookSearch.js";
 import { handleFormSubmit, validateForm } from "./utils/form.js";
+import { supabase } from "./utils/supabaseClient.js";
 
 async function renderBooks(){
 
-    const response = await fetch("src/data/books.json");
-    const books = await response.json();
+    const { data: books, error } = await supabase.from('books').select('*');
 
-    for (const book of Object.values(books.data)){
+    if (error) {
+        console.error("Error fetching books:", error);
+        return [];
+    }
+
+    for (const book of books){
         const container = document.getElementById(String(book.year));
         if (!container) continue;
 
