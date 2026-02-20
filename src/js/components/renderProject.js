@@ -8,10 +8,10 @@ export function renderProject(project) {
         const projectLink = document.createElement("a");
         projectLink.className = "text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited";
         projectLink.href = project.link;
-        projectLink.innerText = project.Title;
+        projectLink.innerText = project.title;
         projectTitle.appendChild(projectLink);
     } else {
-        projectTitle.innerText = project.Title;
+        projectTitle.innerText = project.title;
     }
     projectContainer.appendChild(projectTitle);
 
