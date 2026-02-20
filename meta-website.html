@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,40 @@
     <link rel="stylesheet" href="src/styles/output.css">
     <title>Arnau Neches Vilà | Meta-website</title>
 </head>
+
 <body class="bg-bgmain text-main font-custom p-1 lg:p-8">
 
     <div class="flex items-center gap-x-3">
         <label for="dark-mode-toggle" class="relative inline-block w-11 h-6 cursor-pointer">
             <input type="checkbox" id="dark-mode-toggle" class="peer sr-only">
             <span class="absolute inset-0 bg-components rounded-full transition-colors duration-200 ease-in-out"></span>
-            <span class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-titles rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full"></span>
+            <span
+                class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-titles rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full"></span>
         </label>
         <label for="dark-mode-toggle" class="text-sm text-titles" id="dark-mode-text">Dark mode</label>
     </div>
 
     <header class="bg-hm p-2 lg:p-4 box-border">
         <div class="max-w-7xl mx-auto px-6 box-border">
-            <h1 class="bg-bgtitles text-titles font-bold text-lg lg:text-dktitle text-center rounded-xl sticky top-0 z-5">The meta-website of Arnau's personal site</h1>
+            <h1
+                class="bg-bgtitles text-titles font-bold text-lg lg:text-dktitle text-center rounded-xl sticky top-0 z-5">
+                The meta-website of Arnau's personal site</h1>
             <p class="text-md text-center lg:text-left lg:text-lg py-4 lg:py-6">
                 This will serve as a development journal of my personal website. There will be new
-                entries for each version of the website (Or whenever I feel like writing something). It will also serve as a time
+                entries for each version of the website (Or whenever I feel like writing something). It will also serve
+                as a time
                 machine to view static previous versions.
             </p>
             <nav class="flex justify-around content-center flex-col flex-wrap lg:flex-row gap-2">
-                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#versions">Versions</a></div>
-                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#journal">Journal</a></div>
-                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="index.html">Main page</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a
+                        class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited"
+                        href="#versions">Versions</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a
+                        class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited"
+                        href="#journal">Journal</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a
+                        class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited"
+                        href="index.html">Main page</a></div>
             </nav>
         </div>
     </header>
@@ -37,11 +49,13 @@
     <main class="bg-hm p-2 lg:p-4 box-border">
         <div class="max-w-7xl mx-auto px-6 box-border">
             <section class="bg-section py-14" id="versions">
-                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Version list</h2>
-                
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">
+                    Version list</h2>
+
                 <div class="text-center pt-8 pb-4">
                     <label for="version-select" class="text-titles text-md font-bold mr-2">Time Machine:</label>
-                    <select id="version-select" class="bg-components text-main border border-bgmain rounded-md p-2 cursor-pointer">
+                    <select id="version-select"
+                        class="bg-components text-main border border-bgmain rounded-md p-2 cursor-pointer">
                         <option value="">Select a version...</option>
                         <option value="/versions/v0/index.html">Version 0: Pure HTML</option>
                         <option value="/versions/v1/index.html">Version 1: Custom CSS</option>
@@ -52,26 +66,32 @@
                 </div>
             </section>
             <section class="bg-section py-14" id="journal">
-                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Journal</h2>
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">
+                    Journal</h2>
                 <article class="bg-section py-16">
                     <time datetime="2025-12-18">18/12/2025</time>
                     <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold"> Initial goal and methodology:</h3>
                     <p class="text-sm lg:text-md m-3">
                         The main goal of this project is to learn web development while I create my own personal
-                        website. This idea comes from the realization that I lack personal projects (Apart from some smaller or
-                        uni related stuff) and that when you learn the most (At least in software development, maybe not in
+                        website. This idea comes from the realization that I lack personal projects (Apart from some
+                        smaller or
+                        uni related stuff) and that when you learn the most (At least in software development, maybe not
+                        in
                         math) is when you develop (How surprising is this? hahaha).
                     </p>
                     <p class="text-sm lg:text-md m-3">
                         To achieve this and to see a cool evolution as time goes by, I will start developing the page
-                        with very simple technologies (I really mean it, the first version is going to be pure html). Every
-                        new version of the website will adopt new technologies and in the actual site you will be able to
+                        with very simple technologies (I really mean it, the first version is going to be pure html).
+                        Every
+                        new version of the website will adopt new technologies and in the actual site you will be able
+                        to
                         see previous versions (Or at least that's my initial idea, maybe in a few months this becomes a
                         cryptocasino; Who knows? ).
                     </p>
                     <p class="text-sm lg:text-md m-3">
                         I will also try to rely on AI as little as possible to generate code. It is undeniable that AI
-                        is a super useful tool, but I think that it should be used with boundaries if our goal is to learn (I
+                        is a super useful tool, but I think that it should be used with boundaries if our goal is to
+                        learn (I
                         swear not a single word on this page has been AI-generated). Of course, I will use it as a tutor
                         to learn, but I think that I will learn much more if every (maybe some, almost-surely is enough
                         for us P(line written by AI)=0) line of code is written personally by me.
@@ -88,13 +108,15 @@
                     <p class="text-sm lg:text-md m-3">
                         Merry Xmas! This first version of the web-page is going to be simply html, nothing else. I think
                         this early stage of the development is one of the most difficult parts because you actually have
-                        to write text hahaha. The page will be simple: A main page with three sections (Who I am, Projects,
+                        to write text hahaha. The page will be simple: A main page with three sections (Who I am,
+                        Projects,
                         Interests) and some other individual pages such as meta-website (Where this will be written) or
                         books. The books page will be connected with a database in the future.
                     </p>
                     <p class="text-sm lg:text-md m-3">
                         I deployed. For this first version I simply used Vercel but this may change in the future. I
-                        also had to buy and configure the domain (Fortunately we learnt how DNS works at Uni hahah). Lastly,
+                        also had to buy and configure the domain (Fortunately we learnt how DNS works at Uni hahah).
+                        Lastly,
                         I reorganized the folder structure of the project.
                     </p>
                 </article>
@@ -113,18 +135,29 @@
                     <time datetime="2026-1-13">13/1/2026</time>
                     <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold">Version 2:</h3>
                     <p class="text-sm lg:text-md m-3">
-                        Didn't I say that I wasn't gonna do any Tailwind? Well, here we are, webpage completely migrated into TailwindCSS.
-                        At first, I thought it was gonna be tricky, but to be fair it just took me a day to learn and to change everything.
-                        I watched a <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://youtu.be/R5EXap3vNDA?si=_UUx7ipUK4_fGrVW">youtube tutorial</a>
-                        and after that jumped into changing everything (Again using AI as little as possible). I also had to learn how to properly install Tailwind and what package.json is.
+                        Didn't I say that I wasn't gonna do any Tailwind? Well, here we are, webpage completely migrated
+                        into TailwindCSS.
+                        At first, I thought it was gonna be tricky, but to be fair it just took me a day to learn and to
+                        change everything.
+                        I watched a <a
+                            class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited"
+                            href="https://youtu.be/R5EXap3vNDA?si=_UUx7ipUK4_fGrVW">youtube tutorial</a>
+                        and after that jumped into changing everything (Again using AI as little as possible). I also
+                        had to learn how to properly install Tailwind and what package.json is.
                     </p>
                     <p class="text-sm lg:text-md m-3">
-                        Soooo, you may be now wondering, what is my opinion about TailwindCSS? And my answer: I prefer it over css. 
-                        However, I dislike the way html becomes noisy (Too verbose). I can also understand why llms use it so much and the benefits of this.
+                        Soooo, you may be now wondering, what is my opinion about TailwindCSS? And my answer: I prefer
+                        it over css.
+                        However, I dislike the way html becomes noisy (Too verbose). I can also understand why llms use
+                        it so much and the benefits of this.
                     </p>
                     <p class="text-sm lg:text-md m-3">
-                        Finally, what will next version be you may be wondering. Well, of course it is gonna be: Vanilla JS. No framework until I understand most of it.
-                        You are now getting what all of this is about. I am going to start rendering cards without having a database, from plain json files (Reinventing the wheel ts). This brings us to: <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://github.com/ArnauNeches/mini-db">mini-db project</a>.
+                        Finally, what will next version be you may be wondering. Well, of course it is gonna be: Vanilla
+                        JS. No framework until I understand most of it.
+                        You are now getting what all of this is about. I am going to start rendering cards without
+                        having a database, from plain json files (Reinventing the wheel ts). This brings us to: <a
+                            class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited"
+                            href="https://github.com/ArnauNeches/mini-db">mini-db project</a>.
                         See you on the next entry!!
                     </p>
                 </article>
@@ -132,17 +165,37 @@
                     <time datetime="2026-1-19">19/1/2026</time>
                     <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold">Version 3:</h3>
                     <p class="text-sm lg:text-md m-3">
-                        Okey after two days of work, JS is done! My plan was to transition to React after this. However, I think this website
+                        Okey after two days of work, JS is done! My plan was to transition to React after this. However,
+                        I think this website
                         is too static to use React (Will this be as the time I said no Tailwind migration?).
                     </p>
                     <p class="text-sm lg:text-md m-3">
-                        A brief summary of the main features I added with JavaScript: Books list and projects list are now rendered instead of hardcoded into the HTML 
-                        (However, they are rendered from jsons and not from a proper DB. For that I first need to learn backend). The footer is also rendered as it was the same in all pages.
-                        I added a very cool book search feature! Also dark and light mode which took me a while because most information was for Tailwind V3 not V4 and I didn't want to add dark: class all the time.
-                        The suggestions book form now works! (In localStorage, again I still haven't learnt backend). Finally, the videos aren't loaded immediately but only when clicked.
+                        A brief summary of the main features I added with JavaScript: Books list and projects list are
+                        now rendered instead of hardcoded into the HTML
+                        (However, they are rendered from jsons and not from a proper DB. For that I first need to learn
+                        backend). The footer is also rendered as it was the same in all pages.
+                        I added a very cool book search feature! Also dark and light mode which took me a while because
+                        most information was for Tailwind V3 not V4 and I didn't want to add dark: class all the time.
+                        The suggestions book form now works! (In localStorage, again I still haven't learnt backend).
+                        Finally, the videos aren't loaded immediately but only when clicked.
                     </p>
                     <p class="text-sm lg:text-md m-3">
-                        What will next version be? I don't know yet. As I wrote before, my initial plan was React but maybe I directly create a small backend for the page. Stay tuned and you will know!
+                        What will next version be? I don't know yet. As I wrote before, my initial plan was React but
+                        maybe I directly create a small backend for the page. Stay tuned and you will know!
+                    </p>
+                </article>
+                <article class="bg-section py-16">
+                    <time datetime="2026-2-20">20/2/2026</time>
+                    <h3 class="bg-bgtitles text-titles rounded-xl text-lg font-bold">Version 4:</h3>
+                    <p class="text-sm lg:text-md m-3">
+                        Short version, just got rid of the jsons to store projects and books and moved to supaBase. I
+                        could have done a proper backend with fastAPI or something similar but since I only needed two
+                        SELECT and one INSERT that would have been too much overhead. Now the books suggestion's form
+                        works so feel free to suggest!
+                    </p>
+                    <p class="text-sm lg:text-md m-3">
+                        Probably the next version is going to take much longer since I will make the page from the
+                        beginning with Next.js and the semester is about to start (I have lots of things to do hahah).
                     </p>
                 </article>
             </section>
@@ -151,7 +204,8 @@
 
     <footer id="footer">
     </footer>
-    
+
     <script type="module" src="src/js/main.js"></script>
 </body>
+
 </html>
