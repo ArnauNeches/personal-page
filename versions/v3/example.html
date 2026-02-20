@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/images/favicon.png">
+    <link rel="stylesheet" href="src/styles/output.css">
+    <title>Example</title>
+</head>
+<body class="bg-bgmain text-main font-custom p-1 lg:p-8">
+
+    <div class="flex items-center gap-x-3">
+        <label for="dark-mode-toggle" class="relative inline-block w-11 h-6 cursor-pointer">
+            <input type="checkbox" id="dark-mode-toggle" class="peer sr-only">
+            <span class="absolute inset-0 bg-components rounded-full transition-colors duration-200 ease-in-out"></span>
+            <span class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-titles rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full"></span>
+        </label>
+        <label for="dark-mode-toggle" class="text-sm text-titles" id="dark-mode-text">Dark mode</label>
+    </div>   
+    
+    <header class="bg-hm p-2 lg:p-4 box-border">
+        <div class="max-w-7xl mx-auto px-6 box-border">
+            <h1 class="bg-bgtitles text-titles font-bold text-lg lg:text-dktitle text-center rounded-xl sticky top-0 z-5">Page title</h1>
+            <p class="text-md text-center lg:text-left lg:text-lg py-4 lg:py-6">
+                Header text, whatsoeveeeerrrrr
+            </p>
+            <nav class="flex justify-around content-center flex-col flex-wrap lg:flex-row gap-2">
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#section1">Section 1</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#section2">Section 2</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="index.html">Main page</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bg-hm p-2 lg:p-4 box-border">
+        <div class="max-w-7xl mx-auto px-6 box-border">
+            <section class="bg-section py-14" id="section1">
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Section 1</h2>
+                <p class="text-sm lg:text-md m-3">
+                    Paragraph 1 content.
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    Paragraph 2 content.
+                </p>
+            </section>
+            <section class="bg-section py-14" id="section2">
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Section 2</h2>
+                <p class="text-sm lg:text-md m-3">
+                    Paragraph 1 content.
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    Paragraph 2 content.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

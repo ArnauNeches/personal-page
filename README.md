@@ -59,3 +59,8 @@ A brief summary of the main features I added with JavaScript: Books list and pro
 I added a very cool book search feature! Also dark and light mode which took me a while because most information was for Tailwind V3 not V4 and I didn't want to add dark: class all the time. The suggestions book form now works! (In localStorage, again I still haven't learnt backend). Finally, the videos aren't loaded immediately but only when clicked.
 
 What will next version be? I don't know yet. As I wrote before, my initial plan was React but maybe I directly create a small backend for the page. Stay tuned and you will know!
+
+## Version 4:
+Short version, just got rid of the jsons to store projects and books and moved to supaBase. I could have done a proper backend with fastAPI or something similar but since I only needed two SELECT and one INSERT that would have been too much overhead. Now the books suggestion's form works so feel free to suggest!
+
+Probably the next version is going to take much longer since I will make the page from the beginning with Next.js and the semester is about to start (I have lots of things to do hahah).

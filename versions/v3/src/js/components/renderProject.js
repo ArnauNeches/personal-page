@@ -8,19 +8,25 @@ export function renderProject(project) {
         const projectLink = document.createElement("a");
         projectLink.className = "text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited";
         projectLink.href = project.link;
-        projectLink.innerText = project.title;
+        projectLink.innerText = project.Title;
         projectTitle.appendChild(projectLink);
     } else {
-        projectTitle.innerText = project.title;
+        projectTitle.innerText = project.Title;
     }
     projectContainer.appendChild(projectTitle);
 
     const projectDescription = document.createElement("p");
     projectDescription.innerText = project.description;
 
+    if (project.type === "big") {
+        projectContainer.className = "bg-components rounded-xl flex flex-col items-center p-4 m-2 justify-around min-h-44";
+        projectDescription.className = "text-sm text-center pb-2";
 
-    projectContainer.className = "bg-components rounded-xl flex flex-col items-center p-4 m-2 justify-around min-h-44";
-    projectDescription.className = "text-sm text-center pb-2";
+    } else if (project.type === "small") {
+        projectContainer.className = "bg-components rounded-xl p-2 max-w-lg";
+        projectDescription.className = "text-sm";
+
+    }
 
     projectContainer.appendChild(projectDescription);
     

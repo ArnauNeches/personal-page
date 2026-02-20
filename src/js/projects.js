@@ -1,14 +1,18 @@
 import { renderProject } from "./components/renderProject.js";
+import { supabase } from "./utils/supabaseClient.js";
 
 export async function renderProjects() {
 
-    const response = await fetch("src/data/projects.json");
-    const projects = await response.json();
+    const { data: projects, error } = await supabase.from('projects').select('*');
 
-    for (const project of Object.values(projects.data)) {
-        const container = document.getElementById(project.type);
-        if (!container) continue;
+    if (error) {
+        console.error("Error fetching projects:", error);
+        return;
+    }
 
+    const container = document.getElementById("project-container");
+
+    for (const project of projects) {
         const node = renderProject(project);
         container.appendChild(node);
     }

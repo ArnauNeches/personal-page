@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/images/favicon.png">
+    <link rel="stylesheet" href="src/styles/output.css">
+    <title>Arnau Neches Vilà | COMP3888</title>
+</head>
+<body class="bg-bgmain text-main font-custom p-1 lg:p-8">
+
+    <div class="flex items-center gap-x-3">
+        <label for="dark-mode-toggle" class="relative inline-block w-11 h-6 cursor-pointer">
+            <input type="checkbox" id="dark-mode-toggle" class="peer sr-only">
+            <span class="absolute inset-0 bg-components rounded-full transition-colors duration-200 ease-in-out"></span>
+            <span class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-titles rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full"></span>
+        </label>
+        <label for="dark-mode-toggle" class="text-sm text-titles" id="dark-mode-text">Dark mode</label>
+    </div>
+
+    <header class="bg-hm p-2 lg:p-4 box-border">
+        <div class="max-w-7xl mx-auto px-6 box-border">
+            <h1 class="bg-bgtitles text-titles font-bold text-lg lg:text-dktitle text-center rounded-xl sticky top-0 z-5">Accessible Activity Data Platform</h1>
+            <p class="text-md text-center lg:text-left lg:text-lg py-4 lg:py-6">
+                During my exchange year at The University of Sydney, I had the leadership role in the 
+                <a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="https://www.sydney.edu.au/units/COMP3888">Computer Science Capstone Project</a>. This was a 7 people 
+                group project with a real client involved. It lasted for a whole semester (13 weeks).
+            </p>
+            <nav class="flex justify-around content-center flex-col flex-wrap lg:flex-row gap-2">
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#about">About</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="#demo">Project demo</a></div>
+                <div class="bg-components text-md lg:text-lg p-2 lg:p-0 text-center"><a class="text-link hover:text-linkhover hover:underline transition-all visited:text-linkvisited" href="index.html">Main page</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bg-hm p-2 lg:p-4 box-border">
+        <div class="max-w-7xl mx-auto px-6 box-border">
+            <section class="bg-section py-14" id="about">
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">About the project</h2>
+                <p class="text-sm lg:text-md m-3">
+                    I designed and built a microservice-based web app that automates the discovery and management of
+                    accessible physical activity data for a real client. I led the project end-to-end, acting as project
+                    manager, main developer and customer liaison (I had to organize meetings every week).
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    This replaces an excel spreadsheet process used previously by the client with a scalable backend, a
+                    clean web interface, and an AI-powered scraping pipeline. This pipeline automatically finds relevant activity
+                    providers online and turns unstructured web content into structured data using independent service
+                    modules built with Python, Flask, and SQLAlchemy.
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    The system integrates PostgreSQL for persistent storage, Pandas for data exploration and cleaning,
+                    and multiple external APIs including Google Maps API, Google Geocoding, and Google Custom Search.
+                    Dynamic content scraping is handled with Playwright and BeautifulSoup, while Gemini API is used to convert
+                    raw text into structured, schema-compliant candidate records.
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    A candidate workflow ensures data quality before new entries are added to the main
+                    dataset. The frontend is built with HTML, Jinja templates, JavaScript, and TailwindCSS.
+                </p>
+                <p class="text-sm lg:text-md m-3"> 
+                    This project demonstrates my ability to lead technical projects, design production-ready systems,
+                    and deliver AI-driven automation across the full stack.
+                </p>
+            </section>
+            <section class="bg-section py-14" id="demo">
+                <h2 class="bg-bgtitles text-titles font-bold text-lg lg:text-dksubtitle rounded-xl sticky top-0 z-5">Project demo</h2>
+                <p class="text-sm lg:text-md m-3">
+                    Unfortunately, since this project was done for a University course and had real clients involved, it
+                    cannot be shared freely. However, I can show some video demonstrations of how it worked:
+                </p>
+                <div id="video-container" class="grid grid-cols-1 justify-items-center gap-10 p-0 lg:p-10">
+                    <button data-id="_3_FneizlLo" class="relative w-full max-w-full aspect-video bg-black rounded-lg overflow-hidden group" type="button">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-components flex items-center justify-center group-hover:scale-120 transition">
+                                ▶
+                            </div>
+                        </div>
+                    </button>
+                    <button data-id="kdBYIEdz2IQ" class="relative w-full max-w-full aspect-video bg-black rounded-lg overflow-hidden group" type="button">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-components flex items-center justify-center group-hover:scale-120 transition">
+                                ▶
+                            </div>
+                        </div>
+                    </button>
+                    <button data-id="2YMEGG86wtg" class="relative w-full max-w-full aspect-video bg-black rounded-lg overflow-hidden group" type="button">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-components flex items-center justify-center group-hover:scale-120 transition">
+                                ▶
+                            </div>
+                        </div>
+                    </button>
+                    <button data-id="4ATJDIDczD4" class="relative w-full max-w-full aspect-video bg-black rounded-lg overflow-hidden group" type="button">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-components flex items-center justify-center group-hover:scale-120 transition">
+                                ▶
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+    </footer>
+    
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
