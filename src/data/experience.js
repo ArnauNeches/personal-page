@@ -40,10 +40,10 @@ const experience = [
     endDate: 'jul. 2023',
     url: 'https://acoplan.es',
     summary:
-      'Business analysis internship at Acoplan, co-authoring a sector report on photovoltaic construction timelines.',
+      'Technical assistant internship at Acoplan, co-authoring a sector report on photovoltaic construction timelines.',
     details: {
       description:
-        'Business analysis work in Excel for Acoplan, a project management and scheduling consultancy focused on renewable energy construction. Co-authored a sector report on real construction times for photovoltaic plants, published by Acoplan and distributed by the Colegio Oficial de Ingenieros Industriales de Andalucía Occidental to help the industry plan project timelines more realistically.',
+        'Technical assistant work in Excel for Acoplan, a project management and scheduling consultancy focused on renewable energy construction. Co-authored a sector report on real construction times for photovoltaic plants, published by Acoplan and distributed by the Colegio Oficial de Ingenieros Industriales de Andalucía Occidental to help the industry plan project timelines more realistically.',
     },
     relatedLink: {
       label: 'Read the report',

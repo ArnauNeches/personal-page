@@ -8,8 +8,7 @@ function About() {
         <p>
           I'm a Computer Science and Mathematics student at Universidad de Sevilla, currently
           completing a five-year double degree that included a year abroad at the University of
-          Sydney. My focus sits at the intersection of applied machine learning and research,
-          particularly feature selection, paired with hands-on experience turning research into
+          Sydney. My focus sits at the intersection of applied machine learning and research, paired with hands-on experience turning research into
           working products.
         </p>
         <p>

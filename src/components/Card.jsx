@@ -2,7 +2,7 @@ import { useId } from 'react'
 import Tag from './Tag'
 import useExpandable from '../hooks/useExpandable'
 
-function Card({ title, meta, tags, image, href, children, details }) {
+function Card({ title, meta, tags, image, imageAlt, href, children, details }) {
   const isExternal = href?.startsWith('http')
   const linkProps = href
     ? { href, ...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {}) }
@@ -20,7 +20,7 @@ function Card({ title, meta, tags, image, href, children, details }) {
             {...linkProps}
             className="aspect-square w-28 shrink-0 self-start overflow-hidden rounded-sm border border-border hover:opacity-80"
           >
-            <img src={image} alt={title} className="h-full w-full object-cover" />
+            <img src={image} alt={imageAlt ?? title} className="h-full w-full object-cover" />
           </ImageTag>
         )}
         <div className="min-w-0 flex-1">

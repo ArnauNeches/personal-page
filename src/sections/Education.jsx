@@ -14,6 +14,7 @@ function Education() {
             title={entry.degree}
             meta={`${entry.startDate} – ${entry.endDate}`}
             image={entry.image}
+            imageAlt={`${entry.institution} logo`}
             href={entry.url}
             details={
               <div className="flex flex-col gap-2">
