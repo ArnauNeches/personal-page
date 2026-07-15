@@ -1,12 +1,16 @@
+import { useId } from 'react'
 import Tag from './Tag'
+import useExpandable from '../hooks/useExpandable'
 
-function Card({ title, meta, tags, image, href, children }) {
+function Card({ title, meta, tags, image, href, children, details }) {
   const isExternal = href?.startsWith('http')
   const linkProps = href
     ? { href, ...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {}) }
     : {}
   const ImageTag = href ? 'a' : 'div'
   const TitleTag = href ? 'a' : 'span'
+  const { isExpanded, toggle } = useExpandable()
+  const detailsId = useId()
 
   return (
     <article className="flex gap-3 rounded-sm border border-border bg-bg-raised p-4">
@@ -35,6 +39,24 @@ function Card({ title, meta, tags, image, href, children }) {
           </div>
         )}
         {children && <div className="mt-4 text-md text-fg-muted">{children}</div>}
+        {details && (
+          <>
+            <button
+              type="button"
+              onClick={toggle}
+              aria-expanded={isExpanded}
+              aria-controls={detailsId}
+              className="mt-3 font-mono text-sm text-fg-muted hover:text-fg"
+            >
+              {isExpanded ? '− less' : '+ more'}
+            </button>
+            {isExpanded && (
+              <div id={detailsId} className="mt-3 border-t border-border pt-3 text-sm text-fg-muted">
+                {details}
+              </div>
+            )}
+          </>
+        )}
       </div>
     </article>
   )

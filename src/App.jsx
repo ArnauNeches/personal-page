@@ -28,6 +28,19 @@ function App() {
             meta={`${entry.startDate} – ${entry.endDate}`}
             image
             href={entry.url}
+            details={
+              <div className="flex flex-col gap-2">
+                <p>{entry.details.description}</p>
+                {entry.details.distinctions && <p>{entry.details.distinctions}</p>}
+                {entry.details.coursework?.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {entry.details.coursework.map((course) => (
+                      <Tag key={course}>{course}</Tag>
+                    ))}
+                  </div>
+                )}
+              </div>
+            }
           >
             <p>
               {entry.institution} · {entry.location}
