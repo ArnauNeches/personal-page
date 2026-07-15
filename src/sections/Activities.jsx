@@ -13,7 +13,6 @@ function Activities() {
             title={activity.organization}
             meta={activity.role}
             href={activity.url}
-            image
             details={<p>{activity.details.description}</p>}
           >
             <p>{activity.summary}</p>
