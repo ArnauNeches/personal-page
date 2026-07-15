@@ -1,0 +1,26 @@
+import SectionHeading from '../components/SectionHeading'
+import Card from '../components/Card'
+import activities from '../data/activities'
+
+function Activities() {
+  return (
+    <section id="activities" className="px-6 py-24">
+      <SectionHeading index={5} title="Activities" />
+      <div className="flex flex-col gap-6">
+        {activities.map((activity) => (
+          <Card
+            key={activity.id}
+            title={activity.organization}
+            meta={activity.role}
+            href={activity.url}
+            details={<p>{activity.details.description}</p>}
+          >
+            <p>{activity.summary}</p>
+          </Card>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default Activities

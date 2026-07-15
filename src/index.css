@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+
+  --color-bg: #0a0a0a;
+  --color-bg-raised: #161618;
+  --color-fg: #f2f2f0;
+  --color-fg-muted: #8a8a8f;
+  --color-border: #29292c;
+}
+
+html {
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
