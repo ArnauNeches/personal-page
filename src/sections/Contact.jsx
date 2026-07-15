@@ -1,7 +1,19 @@
+import SectionHeading from '../components/SectionHeading'
+import Button from '../components/Button'
+import contact from '../data/contact'
+
 function Contact() {
   return (
-    <section id="contact" className="min-h-screen">
-      <h2>Contact</h2>
+    <section id="contact" className="px-6 py-24">
+      <SectionHeading index={6} title="Contact" />
+      <p className="mb-6 text-fg-muted">{contact.name}</p>
+      <div className="flex flex-wrap gap-3">
+        {contact.links.map((link) => (
+          <Button key={link.label} href={link.href}>
+            {link.label}
+          </Button>
+        ))}
+      </div>
     </section>
   )
 }

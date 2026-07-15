@@ -1,7 +1,6 @@
 import Nav from './components/Nav'
 import Hero from './sections/Hero'
 import About from './sections/About'
-import HighlightStrip from './sections/HighlightStrip'
 import Education from './sections/Education'
 import Experience from './sections/Experience'
 import Projects from './sections/Projects'
@@ -14,7 +13,6 @@ function App() {
       <Nav />
       <Hero />
       <About />
-      <HighlightStrip />
       <Education />
       <Experience />
       <Projects />

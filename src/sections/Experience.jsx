@@ -19,13 +19,17 @@ function Experience() {
             title={`${entry.role}, ${entry.organization}`}
             meta={formatDateRange(entry.startDate, entry.endDate)}
             href={entry.url}
-            image
+            details={
+              <div className="flex flex-col gap-2">
+                <p>{entry.details.description}</p>
+                {entry.details.group && (
+                  <p className="font-mono text-xs">{entry.details.group}</p>
+                )}
+              </div>
+            }
           >
             <p>{entry.location}</p>
-            <p className="mt-2">{entry.details.description}</p>
-            {entry.details.group && (
-              <p className="mt-2 font-mono text-xs">{entry.details.group}</p>
-            )}
+            <p className="mt-2">{entry.summary}</p>
             {entry.relatedLink &&
               (entry.id === 'research-assistant' ? (
                 <PublicationsModal label={entry.relatedLink.label} />

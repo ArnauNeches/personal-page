@@ -15,7 +15,9 @@ function Activities() {
             href={activity.url}
             image
             details={<p>{activity.details.description}</p>}
-          />
+          >
+            <p>{activity.summary}</p>
+          </Card>
         ))}
       </div>
     </section>
