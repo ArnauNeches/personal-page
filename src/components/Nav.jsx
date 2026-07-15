@@ -1,7 +1,6 @@
 const links = [
   { id: 'about', label: 'About' },
   { id: 'education', label: 'Education' },
-  { id: 'research', label: 'Research' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
   { id: 'activities', label: 'Activities' },

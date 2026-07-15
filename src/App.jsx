@@ -3,7 +3,6 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import HighlightStrip from './sections/HighlightStrip'
 import Education from './sections/Education'
-import Research from './sections/Research'
 import Experience from './sections/Experience'
 import Projects from './sections/Projects'
 import Activities from './sections/Activities'
@@ -17,7 +16,6 @@ function App() {
       <About />
       <HighlightStrip />
       <Education />
-      <Research />
       <Experience />
       <Projects />
       <Activities />

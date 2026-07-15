@@ -12,7 +12,7 @@ const experience = [
         'Research assistant at MINERVA, an artificial intelligence and data science research lab at Universidad de Sevilla working on data mining, time series forecasting, and deep learning. Started with time series forecasting to build foundations, then moved into feature selection research, leading to a first-author paper accepted at CAEPIA 2026. Also contributed to a second accepted paper benchmarking a forecasting model for traffic prediction.',
       group: 'MINERVA (Artificial Intelligence Research Lab)',
     },
-    relatedLink: { label: 'See publications', href: '#research' },
+    relatedLink: { label: 'See publications' },
   },
   {
     id: 'startup-cto',
