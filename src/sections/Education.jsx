@@ -13,7 +13,7 @@ function Education() {
             key={entry.id}
             title={entry.degree}
             meta={`${entry.startDate} – ${entry.endDate}`}
-            image
+            image={entry.image}
             href={entry.url}
             details={
               <div className="flex flex-col gap-2">

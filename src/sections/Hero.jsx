@@ -4,8 +4,8 @@ import contact from '../data/contact'
 function Hero() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center gap-10 px-6 sm:flex-row sm:gap-12">
-      <div className="flex aspect-square w-48 shrink-0 items-center justify-center rounded-sm border border-dashed border-border font-mono text-xs text-fg-muted sm:w-64">
-        Photo placeholder
+      <div className="aspect-square w-48 shrink-0 overflow-hidden rounded-sm border border-border sm:w-64">
+        <img src="/images/profile.png" alt={contact.name} className="h-full w-full object-cover" />
       </div>
       <div>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-5xl">{contact.name}</h1>

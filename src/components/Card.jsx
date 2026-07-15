@@ -18,9 +18,9 @@ function Card({ title, meta, tags, image, href, children, details }) {
         {image && (
           <ImageTag
             {...linkProps}
-            className="flex aspect-square w-28 shrink-0 items-center justify-center self-start rounded-sm border border-dashed border-border font-mono text-xs text-fg-muted hover:opacity-80"
+            className="aspect-square w-28 shrink-0 self-start overflow-hidden rounded-sm border border-border hover:opacity-80"
           >
-            IMG
+            <img src={image} alt={title} className="h-full w-full object-cover" />
           </ImageTag>
         )}
         <div className="min-w-0 flex-1">
