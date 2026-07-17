@@ -10,7 +10,7 @@ function Hero() {
       <div>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-5xl">{contact.name}</h1>
         <p className="mt-4 text-lg text-fg-muted sm:text-xl">
-          Computer Science & Mathematics student and ML researcher.
+          Computer Science & Mathematics student.
         </p>
         <p className="mt-2 max-w-2xl text-fg-muted">
           Double degree at Universidad de Sevilla, with a year at the University of Sydney,
