@@ -28,6 +28,11 @@ function Card({ title, meta, tags, image, imageAlt, href, children, details }) {
             <h3 className="text-lg font-medium">
               <TitleTag {...linkProps} className={href ? 'hover:underline' : undefined}>
                 {title}
+                {isExternal && (
+                  <span className="ml-0.5 align-super text-[0.65em]" aria-hidden="true">
+                    ↗
+                  </span>
+                )}
               </TitleTag>
             </h3>
             {meta && <span className="font-mono text-xs text-fg-muted">{meta}</span>}

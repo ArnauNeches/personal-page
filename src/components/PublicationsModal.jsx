@@ -20,8 +20,11 @@ function PublicationsModal({ label }) {
               title={pub.title}
               meta={pub.venue}
               tags={[pub.authorRole, pub.status]}
+              href={pub.link ?? undefined}
               details={<p>{pub.details.description}</p>}
-            />
+            >
+              {!pub.link && <p className="font-mono text-xs">Link not available yet</p>}
+            </Card>
           ))}
         </div>
       </Modal>
