@@ -4,8 +4,8 @@ import projects from '../data/projects'
 
 function Projects() {
   return (
-    <section id="projects" className="px-6 py-24">
-      <SectionHeading index={4} title="Projects" />
+    <section id="projects" className="px-6 py-14">
+      <SectionHeading title="Projects" />
       <div className="flex flex-col gap-6">
         {projects.map((project) => (
           <Card

@@ -4,8 +4,8 @@ import activities from '../data/activities'
 
 function Activities() {
   return (
-    <section id="activities" className="px-6 py-24">
-      <SectionHeading index={5} title="Activities" />
+    <section id="activities" className="px-6 py-14">
+      <SectionHeading title="Activities" />
       <div className="flex flex-col gap-6">
         {activities.map((activity) => (
           <Card

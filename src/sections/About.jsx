@@ -2,8 +2,8 @@ import SectionHeading from '../components/SectionHeading'
 
 function About() {
   return (
-    <section id="about" className="px-6 py-24">
-      <SectionHeading index={1} title="About" />
+    <section id="about" className="px-6 py-14">
+      <SectionHeading title="About" />
       <div className="flex max-w-2xl flex-col gap-4 text-fg-muted">
         <p>
           I'm a Computer Science and Mathematics student at Universidad de Sevilla, currently
