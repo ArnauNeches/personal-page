@@ -54,7 +54,7 @@ function Card({ title, meta, tags, image, imageAlt, href, children, details }) {
             onClick={toggle}
             aria-expanded={isExpanded}
             aria-controls={detailsId}
-            className="self-start font-mono text-sm text-fg-muted hover:text-fg"
+            className="self-start font-mono text-base text-fg-muted hover:text-fg"
           >
             {isExpanded ? '− less' : '+ more'}
           </button>

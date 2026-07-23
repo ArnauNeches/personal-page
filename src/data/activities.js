@@ -5,10 +5,10 @@ const activities = [
     role: 'Events Organizer / Admin (current year); Member',
     url: 'https://clubalgoritmiaus.es/',
     summary:
-      'Weekly competitive programming training; qualified nationally twice with a team via AdaByron.',
+      'Events organizer for the club, also competing with a team that has qualified nationally twice via AdaByron.',
     details: {
       description:
-        'Weekly training sessions and competitive programming practice with fellow students from computer science, mathematics, and physics. Two national-level qualifications achieved with a team, after winning regional rounds of AdaByron, a Spanish university programming contest modeled on the ICPC (International Collegiate Programming Contest), run in two stages: regional qualifiers followed by a national final.',
+        'We reach out to companies for sponsorships and funding, organize competitions with over 100 participants and talks with industry professionals and university professors on topics in mathematics and computer science. AdaByron is a Spanish university programming contest modeled on the ICPC, run in two stages: regional qualifiers followed by a national final.',
     },
   },
   {

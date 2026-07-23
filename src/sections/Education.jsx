@@ -5,8 +5,8 @@ import education from '../data/education'
 
 function Education() {
   return (
-    <section id="education" className="px-6 py-24">
-      <SectionHeading index={2} title="Education" />
+    <section id="education" className="px-6 py-14">
+      <SectionHeading title="Education" />
       <div className="flex flex-col gap-6">
         {education.map((entry) => (
           <Card

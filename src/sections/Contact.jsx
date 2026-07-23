@@ -4,8 +4,8 @@ import contact from '../data/contact'
 
 function Contact() {
   return (
-    <section id="contact" className="px-6 py-24">
-      <SectionHeading index={6} title="Contact" />
+    <section id="contact" className="px-6 py-14">
+      <SectionHeading title="Contact" />
       <p className="mb-6 text-fg-muted">{contact.name}</p>
       <div className="flex flex-wrap gap-3">
         {contact.links.map((link) => (

@@ -10,8 +10,8 @@ function formatDateRange(startDate, endDate) {
 
 function Experience() {
   return (
-    <section id="experience" className="px-6 py-24">
-      <SectionHeading index={3} title="Experience" />
+    <section id="experience" className="px-6 py-14">
+      <SectionHeading title="Experience" />
       <div className="flex flex-col gap-6">
         {experience.map((entry) => (
           <Card
