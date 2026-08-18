@@ -12,9 +12,11 @@ function About() {
           working products.
         </p>
         <p>
-          Alongside my studies, I work as a research assistant at MINERVA and as an engineer at
-          Welyto, an early-stage startup building AI products for elderly care. I'm also active in
-          competitive programming and Sevilla's Sputnik entrepreneurship community.
+          Alongside my studies, I work as an undergraduate researcher at MINERVA, where I am now
+          focusing on computer vision for my final bachelor's thesis. Previously, I was Lead
+          Software Engineer at Welyto, building and deploying conversational AI systems for older
+          adults. I'm also active in competitive programming and Sevilla's Sputnik entrepreneurship
+          community.
         </p>
       </div>
     </section>

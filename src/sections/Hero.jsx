@@ -14,11 +14,14 @@ function Hero() {
         </p>
         <p className="mt-2 max-w-2xl text-fg-muted">
           Double degree at Universidad de Sevilla, with a year at the University of Sydney,
-          researching ML and building AI products at Welyto.
+          researching machine learning and experienced in building production AI systems.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Button href="#experience">View my work</Button>
           <Button href="#contact">Get in touch</Button>
+          <Button href="/Arnau-Neches-CV.pdf" download>
+            Download CV
+          </Button>
         </div>
       </div>
     </section>

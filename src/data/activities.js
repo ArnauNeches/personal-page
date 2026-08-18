@@ -2,19 +2,21 @@ const activities = [
   {
     id: 'competitive-programming-society',
     organization: 'Club de Algoritmia, Universidad de Sevilla',
-    role: 'Events Organizer / Admin (current year); Member',
+    role: 'Events & Institutional Relations',
+    period: '2024 – Present',
     url: 'https://clubalgoritmiaus.es/',
     summary:
-      'Events organizer for the club, also competing with a team that has qualified nationally twice via AdaByron.',
+      'Competitive programmer and events organizer; qualified with my team for the national Ada Byron contest in 2024 and 2025.',
     details: {
       description:
-        'We reach out to companies for sponsorships and funding, organize competitions with over 100 participants and talks with industry professionals and university professors on topics in mathematics and computer science. AdaByron is a Spanish university programming contest modeled on the ICPC, run in two stages: regional qualifiers followed by a national final.',
+        'Organize academic and industry events and manage external relations, building relationships with 10+ companies for sponsorships, talks, and collaborations. We also organize competitions with over 100 participants. Ada Byron is a Spanish university programming contest modeled on the ICPC, run in two stages: regional qualifiers followed by a national final.',
     },
   },
   {
     id: 'los-300-sputnik',
     organization: 'Los 300, Sputnik',
     role: 'Selected member',
+    period: '2025',
     url: 'https://321sputnik.com/los-300/',
     summary:
       "Selected for Los 300, the elite mentorship tier of Sputnik's entrepreneurship and tech program.",

@@ -6,7 +6,7 @@ export const publications = [
     status: 'Accepted',
     authorRole: 'First author',
     details: {
-      description: 'Proposes two improvements to FOCI, a model-free feature selection algorithm, to better capture multi-feature interactions that greedy methods tend to miss. Shows notable gains in predictive accuracy across synthetic and real-world datasets.',
+      description: 'Forthcoming in Lecture Notes in Artificial Intelligence (LNAI). Proposes two improvements to FOCI, a model-free feature selection algorithm, to better capture multi-feature interactions that greedy methods tend to miss. Shows notable gains in predictive accuracy across synthetic and real-world datasets.',
     },
     link: null, // Not available yet
   },
@@ -17,7 +17,7 @@ export const publications = [
     status: 'Accepted',
     authorRole: 'Contributing author',
     details: {
-      description: 'Evaluates Chronos-2, a foundation model for time series, on traffic forecasting tasks. Minor contribution, assisted the lead authors rather than driving the work.',
+      description: 'Forthcoming in Lecture Notes in Artificial Intelligence (LNAI). Evaluates Chronos-2, a foundation model for time series, on traffic forecasting tasks. Minor contribution, assisted the lead authors rather than driving the work.',
     },
     link: null, // Not available yet
   },

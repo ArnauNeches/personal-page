@@ -11,7 +11,7 @@ function Activities() {
           <Card
             key={activity.id}
             title={activity.organization}
-            meta={activity.role}
+            meta={`${activity.role} · ${activity.period}`}
             href={activity.url}
             details={<p>{activity.details.description}</p>}
           >
