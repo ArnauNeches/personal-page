@@ -2,33 +2,33 @@ const experience = [
   {
     id: 'research-assistant',
     organization: 'Universidad de Sevilla',
-    role: 'Research Assistant',
+    role: 'Undergraduate Researcher',
     location: 'Sevilla, Spain',
     startDate: 'jul. 2025',
     endDate: null,
     url: 'https://grupo.us.es/minerva/',
     summary:
-      'AI research assistant at MINERVA, working on feature selection research, with two papers accepted at CAEPIA 2026.',
+      'Undergraduate researcher at MINERVA, developing feature-selection methods, with two papers accepted at CAEPIA 2026.',
     details: {
       description:
-        'Research assistant at MINERVA, an artificial intelligence and data science research lab at Universidad de Sevilla working on data mining and deep learning. Worked on feature selection research, leading to a first-author paper accepted at CAEPIA 2026, and contributed to a second accepted paper. Now starting a new line of work applying deep learning to cancer image detection for a final year thesis.',
+        'Undergraduate researcher at MINERVA, an artificial intelligence and data science research lab at Universidad de Sevilla. Developed and evaluated two feature-selection methods designed to better capture interactions between features, leading the research, implementation, and experiments across synthetic and real-world datasets. This work led to a first-author paper accepted at CAEPIA 2026, alongside a second accepted paper as a contributing author. Now starting a new line of work applying deep learning to cancer image detection for a final year thesis.',
       group: 'MINERVA (Artificial Intelligence Research Lab)',
     },
     relatedLink: { label: 'See publications' },
   },
   {
-    id: 'startup-cto',
+    id: 'welyto-lead-software-engineer',
     organization: 'Welyto',
-    role: 'Engineer',
-    location: 'Seville',
+    role: 'Lead Software Engineer',
+    location: 'Seville, Spain',
     startDate: 'apr. 2026',
-    endDate: null,
+    endDate: 'aug. 2026',
     url: 'https://www.welyto.com/',
     summary:
-      'Engineer at Welyto, building a conversational AI companion that helps elderly users stay connected with family and preserve memories.',
+      'Led software development for a conversational AI device for older adults, deployed to 50 paying beta families.',
     details: {
       description:
-        'Welyto builds a conversational AI companion for elderly users, combining dedicated hardware with conversational AI to reduce loneliness and help preserve personal memories and legacy, while connecting older adults with their families. The company grew out of the Sputnik entrepreneurship program and a University of Sevilla grant. Small team (~5 people) with over 50 initial paid users.',
+        'Led the software development of Welyto\'s conversational AI device for older adults, spanning backend architecture, cloud infrastructure, AI integration, real-time device communication, and the family-facing application. Built and deployed the backend and device-cloud platform using Python, FastAPI, PostgreSQL, WebSockets, Google Cloud, Vertex AI/Gemini, and React. Took the product into production with 50 paying beta families using physical devices, supporting hundreds of real-world conversations and contributing to the architecture of the next-generation product.',
     },
   },
   {

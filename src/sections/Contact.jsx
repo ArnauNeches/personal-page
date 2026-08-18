@@ -9,7 +9,7 @@ function Contact() {
       <p className="mb-6 text-fg-muted">{contact.name}</p>
       <div className="flex flex-wrap gap-3">
         {contact.links.map((link) => (
-          <Button key={link.label} href={link.href}>
+          <Button key={link.label} href={link.href} download={link.download}>
             {link.label}
           </Button>
         ))}
